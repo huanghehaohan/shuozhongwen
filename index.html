@@ -1,0 +1,4485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="ShuoZhongWen - 全语种秒变中文学习平台。支持日语、英语、韩语等12种语言翻译成中文，独家偽中国語2.0密码生成器，中日英三国人都能看懂的神奇语言。TikTok难民专属，全球中文热。">
+<meta name="keywords" content="学中文,中文学习,偽中国語,伪中国语,TikTok难民,小红书,汉字,拼音,中日英,语言学习,Chinese learning,learn Chinese,pseudo Chinese">
+<meta name="author" content="ShuoZhongWen">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="说中文 ShuoZhongWen — 全语种秒变中文 · 偽中国語2.0">
+<meta property="og:description" content="任何语言粘贴进来立刻看懂中文。独家偽中国語2.0：中日英三国人都能看懂，翻译器却翻不好的神奇语言。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="说中文 — 偽中国語2.0 三语密码生成器">
+<meta name="twitter:description" content="中日英三国人都能看懂，翻译器却翻不好。2025年小红书爆火现象。">
+<link rel="canonical" href="https://shuozhongwen.app/">
+<link rel="alternate" hreflang="zh" href="https://shuozhongwen.app/">
+<link rel="alternate" hreflang="en" href="https://shuozhongwen.app/?lang=en">
+<link rel="alternate" hreflang="ja" href="https://shuozhongwen.app/?lang=ja">
+<link rel="alternate" hreflang="ko" href="https://shuozhongwen.app/?lang=ko">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "说中文 ShuoZhongWen",
+  "description": "全语种转中文学习平台，独家偽中国語2.0密码生成器",
+  "url": "https://shuozhongwen.app/",
+  "applicationCategory": "EducationApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "inLanguage": ["zh", "en", "ja", "ko"],
+  "keywords": "Chinese learning, 偽中国語, pseudo Chinese, TikTok refugees, Xiaohongshu"
+}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>说中文 · ShuoZhongWen — 全语种秒变中文</title>
+<style>
+  :root {
+    --red: #ff2442;
+    --pink: #ff6b8a;
+    --light-pink: #fff0f3;
+    --gold: #ffb347;
+    --text: #1a1a1a;
+    --gray: #888;
+    --border: #ffe0e6;
+    --white: #ffffff;
+    --shadow: 0 4px 20px rgba(255,36,66,0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    background: linear-gradient(135deg, #fff0f3 0%, #fff8f0 50%, #f0f8ff 100%);
+    min-height: 100vh;
+    color: var(--text);
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    background: var(--white);
+    border-bottom: 2px solid var(--border);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .logo-icon {
+    width: 40px; height: 40px;
+    background: var(--red);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+  }
+  .logo-text {
+    display: flex; flex-direction: column;
+    line-height: 1.2;
+  }
+  .logo-cn { font-size: 18px; font-weight: 700; color: var(--red); }
+  .logo-en { font-size: 11px; color: var(--gray); letter-spacing: 1px; }
+  .header-badge {
+    background: linear-gradient(135deg, var(--red), var(--pink));
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  /* ===== HERO SECTION ===== */
+  .hero-section {
+    text-align: center;
+    padding: 40px 24px 28px;
+    background: linear-gradient(180deg, #fff0f3 0%, transparent 100%);
+  }
+  .hero-tags {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    justify-content: center; margin-bottom: 20px;
+  }
+  .htag {
+    padding: 5px 14px; border-radius: 20px;
+    font-size: 12px; font-weight: 700;
+  }
+  .htag-fire { background: #fff0f3; color: var(--red); border: 1.5px solid #ffb3c1; }
+  .htag-tiktok { background: #f0f0ff; color: #5c5cff; border: 1.5px solid #c5c5ff; }
+  .htag-new { background: #f0fff4; color: #28a745; border: 1.5px solid #a5d6a7; }
+
+  .hero-title {
+    font-size: clamp(32px, 7vw, 56px);
+    font-weight: 900; line-height: 1.1;
+    margin-bottom: 16px;
+    display: flex; align-items: center; justify-content: center;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .ht-line1 { color: var(--text); }
+  .ht-arrow {
+    color: var(--red); font-size: 0.8em;
+    animation: arrowPulse 1.5s ease-in-out infinite;
+  }
+  @keyframes arrowPulse {
+    0%,100% { transform: translateX(0); opacity: 1; }
+    50% { transform: translateX(6px); opacity: 0.7; }
+  }
+  .ht-line2 {
+    color: var(--red);
+    background: linear-gradient(135deg, var(--red), var(--pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-sub {
+    font-size: 15px; color: var(--gray);
+    line-height: 1.8; max-width: 520px;
+    margin: 0 auto 28px;
+  }
+  .hero-sub strong { color: var(--red); }
+
+  .hero-stats {
+    display: flex; align-items: center; justify-content: center;
+    gap: 0; flex-wrap: wrap;
+    background: var(--white);
+    border-radius: 16px; padding: 16px 24px;
+    box-shadow: var(--shadow);
+    max-width: 600px; margin: 0 auto;
+    border: 1px solid var(--border);
+  }
+  .hstat { text-align: center; padding: 0 20px; }
+  .hstat-num {
+    font-size: 24px; font-weight: 900; color: var(--red);
+    line-height: 1;
+  }
+  .hstat-label { font-size: 11px; color: var(--gray); margin-top: 4px; }
+  .hstat-divider {
+    width: 1px; height: 36px;
+    background: var(--border);
+  }
+
+  /* ===== SELLING POINTS ===== */
+  .selling-points {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 900px; margin: 24px auto;
+    padding: 0 16px;
+  }
+  .sp-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 24px 20px;
+    border: 1.5px solid var(--border);
+    box-shadow: var(--shadow);
+    display: flex; flex-direction: column;
+    gap: 10px; position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .sp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(255,36,66,0.15);
+  }
+  .sp-featured {
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    border-color: #0f3460;
+    color: white;
+  }
+  .sp-badge {
+    position: absolute; top: -12px; left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--gold), #ff9500);
+    color: white; padding: 4px 14px;
+    border-radius: 20px; font-size: 11px; font-weight: 700;
+    white-space: nowrap;
+  }
+  .sp-icon { font-size: 32px; }
+  .sp-title {
+    font-size: 16px; font-weight: 800;
+    color: var(--text);
+  }
+  .sp-featured .sp-title { color: white; }
+  .sp-desc {
+    font-size: 13px; color: var(--gray);
+    line-height: 1.6; flex: 1;
+  }
+  .sp-featured .sp-desc { color: rgba(255,255,255,0.7); }
+
+  .sp-demo {
+    background: var(--light-pink);
+    border-radius: 10px; padding: 10px 14px;
+    font-size: 13px; text-align: center;
+  }
+  .sp-demo-dark {
+    background: rgba(255,255,255,0.08);
+  }
+  .demo-from { color: var(--gray); }
+  .demo-arrow { color: var(--red); margin: 0 6px; font-weight: 700; }
+  .demo-to { color: var(--text); font-weight: 600; }
+  .demo-to em { color: var(--red); font-style: normal; font-size: 11px; }
+  .demo-tag {
+    display: inline-block;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px; padding: 3px 10px;
+    font-size: 12px; color: var(--text);
+  }
+
+  .demo-pseudo {
+    display: flex; flex-wrap: wrap; gap: 4px;
+    justify-content: center; margin-bottom: 8px;
+  }
+  .dp-hanzi { color: #ff6b8a; font-weight: 700; font-size: 15px; }
+  .dp-en { color: #69db7c; font-style: italic; font-size: 13px; }
+  .demo-flags { font-size: 13px; color: rgba(255,255,255,0.8); }
+
+  .sp-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--red), var(--pink));
+    color: white; border: none; border-radius: 10px;
+    font-size: 13px; font-weight: 700;
+    cursor: pointer; transition: all 0.2s;
+    align-self: flex-start;
+  }
+  .sp-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255,36,66,0.4); }
+  .sp-btn-white {
+    background: white; color: #0f3460;
+  }
+  .sp-btn-white:hover { box-shadow: 0 4px 12px rgba(255,255,255,0.3); }
+
+  /* ===== SOCIAL PROOF ===== */
+  .social-proof {
+    overflow: hidden;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+    margin-bottom: 8px;
+  }
+  .proof-scroll {
+    display: flex; gap: 40px;
+    animation: scrollLeft 30s linear infinite;
+    white-space: nowrap;
+    width: max-content;
+  }
+  .proof-scroll:hover { animation-play-state: paused; }
+  @keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .proof-item {
+    font-size: 13px; color: var(--gray);
+    flex-shrink: 0;
+  }
+  .proof-item strong { color: var(--text); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 700px) {
+    .selling-points { grid-template-columns: 1fr; }
+    .hero-stats { gap: 0; }
+    .hstat { padding: 0 12px; }
+    .hstat-num { font-size: 20px; }
+  }
+
+  /* ===== OLD HERO (keep for compat) ===== */
+  .hero-emoji { font-size: 48px; margin-bottom: 12px; display: block; }
+  .hero h1 {
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .hero h1 span { color: var(--red); }
+  .hero p {
+    font-size: 15px;
+    color: var(--gray);
+    max-width: 480px;
+    margin: 0 auto 24px;
+    line-height: 1.7;
+  }
+  .hot-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #ff2442, #ff6b8a);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  /* ===== TABS ===== */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 24px 24px;
+    flex-wrap: wrap;
+  }
+  .tab-btn {
+    padding: 10px 22px;
+    border-radius: 24px;
+    border: 2px solid var(--border);
+    background: var(--white);
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .tab-btn.active {
+    background: var(--red);
+    border-color: var(--red);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255,36,66,0.3);
+  }
+  .tab-btn:hover:not(.active) {
+    border-color: var(--pink);
+    color: var(--red);
+  }
+
+  /* ===== MAIN CARD ===== */
+  .main-card {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 16px 40px;
+  }
+  .card {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  /* ===== TRANSLATOR PANEL ===== */
+  .translator {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    min-height: 280px;
+  }
+  .trans-panel {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .trans-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--light-pink);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .lang-selector:hover { border-color: var(--pink); }
+  .lang-selector select {
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    outline: none;
+    max-width: 140px;
+  }
+  .char-count { font-size: 12px; color: var(--gray); }
+  textarea {
+    flex: 1;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    font-family: inherit;
+    min-height: 160px;
+    background: transparent;
+  }
+  textarea::placeholder { color: #ccc; }
+  .trans-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .btn-clear {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--gray);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-clear:hover { border-color: var(--pink); color: var(--red); }
+
+  /* ===== SWAP BUTTON ===== */
+  .swap-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    background: var(--light-pink);
+  }
+  .btn-swap {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: var(--white);
+    color: var(--red);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(255,36,66,0.15);
+  }
+  .btn-swap:hover {
+    background: var(--red);
+    color: white;
+    transform: rotate(180deg);
+    border-color: var(--red);
+  }
+
+  /* ===== OUTPUT PANEL ===== */
+  .output-panel {
+    padding: 20px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .output-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .output-lang-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, var(--red), var(--pink));
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .btn-copy {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--white);
+    color: var(--gray);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-copy:hover { border-color: var(--pink); color: var(--red); }
+  .btn-copy.copied { background: var(--red); color: white; border-color: var(--red); }
+  .output-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--text);
+    min-height: 160px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .output-placeholder {
+    color: #ccc;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    gap: 8px;
+  }
+  .output-placeholder span { font-size: 32px; }
+
+  /* ===== TRANSLATE BUTTON ===== */
+  .translate-bar {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .btn-translate {
+    padding: 12px 32px;
+    background: linear-gradient(135deg, var(--red), var(--pink));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 16px rgba(255,36,66,0.35);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-translate:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,36,66,0.45);
+  }
+  .btn-translate:active { transform: translateY(0); }
+  .btn-translate:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  .translate-options {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .option-chip {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    background: var(--white);
+    color: var(--gray);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .option-chip.active {
+    border-color: var(--red);
+    color: var(--red);
+    background: var(--light-pink);
+  }
+  .option-chip:hover { border-color: var(--pink); color: var(--red); }
+
+  /* ===== PINYIN RESULT ===== */
+  .pinyin-block {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+    background: linear-gradient(135deg, #fff8f0, #fff0f3);
+    display: none;
+  }
+  .pinyin-block.show { display: block; }
+  .pinyin-title {
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .pinyin-chars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pinyin-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  .pinyin-py {
+    font-size: 11px;
+    color: var(--red);
+    font-weight: 600;
+    line-height: 1;
+  }
+  .pinyin-ch {
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--text);
+  }
+
+  /* ===== VOCAB BLOCK ===== */
+  .vocab-block {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+    display: none;
+  }
+  .vocab-block.show { display: block; }
+  .vocab-title {
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .vocab-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vocab-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 14px;
+    background: var(--light-pink);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .vocab-word {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--red);
+    min-width: 40px;
+  }
+  .vocab-info { flex: 1; }
+  .vocab-pinyin { font-size: 12px; color: var(--pink); margin-bottom: 2px; }
+  .vocab-meaning { font-size: 13px; color: var(--text); line-height: 1.5; }
+
+  /* ===== EXAMPLES SECTION ===== */
+  .examples-section {
+    margin-top: 24px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .example-chip {
+    padding: 10px 14px;
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .example-chip:hover {
+    border-color: var(--red);
+    background: var(--light-pink);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255,36,66,0.12);
+  }
+  .example-chip .ex-lang { font-size: 11px; color: var(--gray); margin-bottom: 3px; }
+  .example-chip .ex-text { color: var(--text); font-weight: 500; }
+
+  /* ===== FUN SECTION ===== */
+  .fun-section {
+    margin-top: 24px;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+  .fun-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .fun-card {
+    background: linear-gradient(135deg, var(--light-pink), #fff8f0);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .fun-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(255,36,66,0.15);
+    border-color: var(--pink);
+  }
+  .fun-card .fc-emoji { font-size: 28px; margin-bottom: 8px; display: block; }
+  .fun-card .fc-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .fun-card .fc-sub { font-size: 11px; color: var(--gray); line-height: 1.4; }
+
+  /* ===== LOADING ===== */
+  .loading-dots {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+  }
+  .loading-dots span {
+    width: 6px; height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: bounce 1.2s infinite;
+  }
+  .loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+  .loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes bounce {
+    0%,80%,100% { transform: scale(0.6); opacity: 0.5; }
+    40% { transform: scale(1); opacity: 1; }
+  }
+
+  /* ===== TOAST ===== */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: #1a1a1a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 999;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  footer a { color: var(--red); text-decoration: none; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 600px) {
+    .translator {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+    }
+    .swap-col {
+      border: none;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 12px;
+      background: var(--light-pink);
+    }
+    .btn-swap { transform: rotate(90deg); }
+    .btn-swap:hover { transform: rotate(270deg); }
+    .hero h1 { font-size: 22px; }
+  }
+
+
+  /* ===== PSEUDO CHINESE 2.0 ===== */
+/* HEADER */
+
+/* HERO BANNER */
+.hero-banner {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: white;
+  padding: 32px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-banner::before {
+  content: '漢字 Kanji 汉字';
+  position: absolute; top: 10px; left: -20px;
+  font-size: 80px; opacity: 0.05; white-space: nowrap;
+  font-weight: 900; letter-spacing: 20px;
+}
+.hero-banner .badge {
+  display: inline-block;
+  background: rgba(255,36,66,0.8);
+  padding: 4px 14px; border-radius: 20px;
+  font-size: 12px; font-weight: 600; margin-bottom: 12px;
+}
+.hero-banner h2 {
+  font-size: clamp(20px,4vw,32px);
+  font-weight: 800; line-height: 1.4; margin-bottom: 12px;
+}
+.hero-banner h2 .highlight { color: #ffd700; }
+.hero-banner p { font-size: 14px; opacity: 0.8; line-height: 1.7; max-width: 500px; margin: 0 auto 20px; }
+
+/* FORMULA */
+.formula {
+  display: flex; align-items: center; justify-content: center;
+  gap: 8px; flex-wrap: wrap;
+  background: rgba(255,255,255,0.1);
+  border-radius: 16px; padding: 14px 20px;
+  max-width: 480px; margin: 0 auto;
+}
+.formula-item {
+  padding: 8px 14px; border-radius: 10px;
+  font-size: 14px; font-weight: 700; text-align: center;
+}
+.formula-item.hanzi { background: rgba(255,36,66,0.3); border: 1px solid rgba(255,36,66,0.5); }
+.formula-item.plus { background: transparent; font-size: 20px; color: rgba(255,255,255,0.6); }
+.formula-item.english { background: rgba(40,167,69,0.3); border: 1px solid rgba(40,167,69,0.5); }
+.formula-item.equals { background: transparent; font-size: 20px; color: #ffd700; }
+.formula-item.result { background: rgba(255,215,0,0.2); border: 1px solid rgba(255,215,0,0.5); color: #ffd700; }
+
+/* TABS */
+.mode-tabs {
+  display: flex; gap: 0;
+  background: var(--white);
+  border-bottom: 2px solid var(--border);
+  overflow-x: auto;
+}
+.mode-tab {
+  flex: 1; min-width: 100px;
+  padding: 14px 16px;
+  border: none; background: none;
+  font-size: 13px; font-weight: 600; color: var(--gray);
+  cursor: pointer; transition: all 0.2s;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+.mode-tab.active {
+  color: var(--red);
+  border-bottom-color: var(--red);
+  background: var(--light-pink);
+}
+.mode-tab:hover:not(.active) { color: var(--red); background: #fafafa; }
+
+/* MAIN */
+.main { max-width: 800px; margin: 0 auto; padding: 24px 16px 60px; }
+
+/* CARD */
+.card {
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.card-header {
+  padding: 18px 20px 0;
+  display: flex; align-items: center; gap: 10px;
+}
+.card-header h3 { font-size: 16px; font-weight: 700; }
+.card-header p { font-size: 13px; color: var(--gray); margin-top: 4px; line-height: 1.6; }
+.card-
+
+/* GENERATOR */
+/* 语言选择器 */
+.lang-switcher {
+  display: flex; gap: 6px; margin-bottom: 12px;
+}
+.ls-btn {
+  flex: 1; padding: 9px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px; background: var(--white);
+  font-size: 13px; font-weight: 600; color: var(--gray);
+  cursor: pointer; transition: all 0.2s;
+}
+.ls-btn.active {
+  border-color: var(--red); color: var(--red);
+  background: var(--light-pink);
+  box-shadow: 0 2px 8px rgba(255,36,66,0.15);
+}
+.ls-btn:hover:not(.active) { border-color: var(--pink); color: var(--red); }
+
+.gen-input {
+  width: 100%;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 100px;
+  outline: none;
+  transition: border-color 0.2s;
+  line-height: 1.7;
+}
+.gen-input:focus { border-color: var(--pink); }
+.gen-input::placeholder { color: #ccc; }
+
+.quick-fill {
+  display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0;
+}
+.quick-chip {
+  padding: 5px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  font-size: 12px; color: var(--gray);
+  cursor: pointer; transition: all 0.2s;
+  background: var(--white);
+}
+.quick-chip:hover { border-color: var(--red); color: var(--red); background: var(--light-pink); }
+
+.btn-generate {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  color: white;
+  border: none; border-radius: 12px;
+  font-size: 15px; font-weight: 700;
+  cursor: pointer; transition: all 0.2s;
+  margin-top: 12px;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.btn-generate:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,52,96,0.4); }
+
+/* RESULT BOX */
+.result-box {
+  margin-top: 16px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border-radius: 14px;
+  padding: 20px;
+  display: none;
+}
+.result-box.show { display: block; }
+.result-label {
+  font-size: 11px; color: rgba(255,255,255,0.5);
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;
+}
+.result-text {
+  font-size: 18px; line-height: 1.9; color: white;
+  font-weight: 500; word-break: break-word;
+}
+.result-text .w-hanzi { color: #ff6b8a; font-weight: 700; }
+.result-text .w-english { color: #69db7c; font-style: italic; }
+.result-text .w-japanese { color: #74c0fc; }
+
+.result-actions {
+  display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap;
+}
+.result-btn {
+  padding: 7px 16px;
+  border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1); color: white;
+  font-size: 12px; cursor: pointer; transition: all 0.2s;
+}
+.result-btn:hover { background: rgba(255,255,255,0.2); }
+.result-btn.primary { background: var(--red); border-color: var(--red); }
+
+/* ANNOTATIONS */
+.annotations {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.ann-title { font-size: 11px; color: rgba(255,255,255,0.4); margin-bottom: 8px; letter-spacing: 1px; }
+.ann-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.ann-item {
+  display: flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px; padding: 5px 10px;
+  font-size: 12px;
+}
+.ann-cn { color: #ff6b8a; font-weight: 700; }
+.ann-arrow { color: rgba(255,255,255,0.3); }
+.ann-en { color: #69db7c; }
+
+/* DECODER */
+.decode-input {
+  width: 100%;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 80px;
+  outline: none;
+  transition: border-color 0.2s;
+  line-height: 1.7;
+}
+.decode-input:focus { border-color: var(--blue); }
+
+.btn-decode {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--blue), #004499);
+  color: white;
+  border: none; border-radius: 12px;
+  font-size: 15px; font-weight: 700;
+  cursor: pointer; transition: all 0.2s;
+  margin-top: 12px;
+}
+.btn-decode:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,102,204,0.4); }
+
+.decode-result {
+  margin-top: 16px; display: none;
+}
+.decode-result.show { display: block; }
+
+.token-flow {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+.token {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 15px; font-weight: 600;
+  cursor: default;
+  transition: transform 0.15s;
+}
+.token:hover { transform: scale(1.1); }
+.token.hanzi { background: #ffe0e6; color: var(--red); border: 1px solid #ffb3c1; }
+.token.english { background: #e8f5e9; color: var(--green); border: 1px solid #a5d6a7; }
+.token.japanese { background: var(--light-blue); color: var(--blue); border: 1px solid #90caf9; }
+.token.punct { background: #f5f5f5; color: var(--gray); border: 1px solid #e0e0e0; }
+
+.legend {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px;
+}
+.legend-item {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; color: var(--gray);
+}
+.legend-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+}
+
+.decode-meaning {
+  background: linear-gradient(135deg, var(--light-blue), #e8f5e9);
+  border-radius: 12px; padding: 14px 16px;
+  border: 1px solid #c8e6c9;
+}
+.decode-meaning .dm-label { font-size: 11px; color: var(--gray); margin-bottom: 6px; letter-spacing: 1px; }
+.decode-meaning .dm-text { font-size: 15px; line-height: 1.7; color: var(--text); }
+
+/* DIALOGS */
+.dialog-scene {
+  margin-bottom: 24px;
+}
+.scene-title {
+  font-size: 14px; font-weight: 700; color: var(--text);
+  margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+.dialog-messages { display: flex; flex-direction: column; gap: 10px; }
+.dialog-msg {
+  display: flex; flex-direction: column; gap: 4px;
+}
+.msg-lang {
+  font-size: 11px; color: var(--gray); font-weight: 600;
+}
+.msg-bubble {
+  background: var(--light-pink);
+  border: 1px solid var(--border);
+  border-radius: 14px 14px 14px 4px;
+  padding: 12px 16px;
+  font-size: 14px; line-height: 1.7;
+  max-width: 90%;
+}
+.msg-bubble .pseudo-text { font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.msg-bubble .pseudo-text .w-hanzi { color: var(--red); }
+.msg-bubble .pseudo-text .w-english { color: var(--green); font-style: italic; }
+.msg-bubble .pseudo-text .w-japanese { color: var(--blue); }
+.msg-bubble .meaning-text { font-size: 12px; color: var(--gray); }
+
+/* EXPLAINER */
+.explainer-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.explainer-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 14px; padding: 16px;
+}
+.explainer-card .ec-version {
+  font-size: 11px; font-weight: 700; color: var(--gray);
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;
+}
+.explainer-card .ec-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.explainer-card .ec-desc { font-size: 12px; color: var(--gray); line-height: 1.6; margin-bottom: 10px; }
+.explainer-card .ec-example {
+  background: #f8f9fa; border-radius: 8px; padding: 10px;
+  font-size: 13px; line-height: 1.7;
+}
+.explainer-card .ec-example .orig { color: var(--gray); font-size: 11px; margin-bottom: 4px; }
+.explainer-card .ec-example .pseudo { font-weight: 600; }
+
+/* SHARE */
+.share-box {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  border-radius: 16px; padding: 20px;
+  color: white; text-align: center;
+}
+.share-box h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.share-box p { font-size: 13px; opacity: 0.7; margin-bottom: 16px; line-height: 1.6; }
+.share-btns { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.share-btn {
+  padding: 10px 20px;
+  border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1); color: white;
+  font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s;
+}
+.share-btn:hover { background: rgba(255,255,255,0.2); }
+
+/* TOAST */
+
+@media (max-width: 600px) {
+  .formula { gap: 4px; }
+  .formula-item { padding: 6px 10px; font-size: 12px; }
+  .hero-banner h2 { font-size: 18px; }
+}
+
+/* NEW ZONES */
+/* ===== 新导航 & 三区分区 CSS ===== */
+
+/* 地区语言选择器 */
+.lang-picker {
+  display: flex; align-items: center; gap: 8px;
+}
+.lang-picker-label { font-size: 12px; color: var(--gray); }
+.lang-picker select {
+  border: 1.5px solid var(--border);
+  border-radius: 8px; padding: 5px 10px;
+  font-size: 13px; font-weight: 600;
+  background: var(--white); color: var(--text);
+  cursor: pointer; outline: none;
+}
+.lang-picker select:hover { border-color: var(--pink); }
+
+/* 三区导航 */
+.zone-nav {
+  display: flex; gap: 0;
+  background: var(--white);
+  border-bottom: 2px solid var(--border);
+  overflow-x: auto;
+  position: sticky; top: 64px; z-index: 90;
+}
+.zone-btn {
+  flex: 1; min-width: 90px;
+  padding: 14px 12px;
+  border: none; background: none;
+  font-size: 13px; font-weight: 700;
+  color: var(--gray); cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 3px solid transparent;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 3px;
+  white-space: nowrap;
+}
+.zone-btn .zb-icon { font-size: 18px; }
+.zone-btn.active { color: var(--red); border-bottom-color: var(--red); background: var(--light-pink); }
+.zone-btn:hover:not(.active) { color: var(--red); background: #fafafa; }
+
+/* 区域内的子tab */
+.sub-tabs {
+  display: flex; gap: 6px; flex-wrap: wrap;
+  padding: 16px 16px 0;
+  max-width: 900px; margin: 0 auto;
+}
+.sub-tab {
+  padding: 8px 18px; border-radius: 20px;
+  border: 1.5px solid var(--border);
+  background: var(--white); color: var(--gray);
+  font-size: 13px; font-weight: 600;
+  cursor: pointer; transition: all 0.2s;
+}
+.sub-tab.active { background: var(--red); border-color: var(--red); color: white; }
+.sub-tab:hover:not(.active) { border-color: var(--pink); color: var(--red); }
+
+/* 区域容器 */
+.zone-content { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+
+/* ===== 每日一句 ===== */
+.daily-card {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  border-radius: 20px; padding: 28px 24px;
+  color: white; text-align: center;
+  position: relative; overflow: hidden;
+  margin-bottom: 20px;
+}
+.daily-card::before {
+  content: '说中文';
+  position: absolute; right: -20px; top: -10px;
+  font-size: 80px; opacity: 0.05; font-weight: 900;
+  color: white; pointer-events: none;
+}
+.daily-date { font-size: 11px; opacity: 0.5; margin-bottom: 16px; letter-spacing: 2px; }
+.daily-zh { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+.daily-py { font-size: 16px; color: #ff6b8a; margin-bottom: 8px; }
+.daily-en { font-size: 15px; opacity: 0.8; margin-bottom: 16px; }
+.daily-note {
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px; padding: 10px 16px;
+  font-size: 13px; opacity: 0.7; line-height: 1.6;
+  margin-bottom: 20px;
+}
+.daily-actions { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.daily-btn {
+  padding: 9px 20px; border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1); color: white;
+  font-size: 13px; font-weight: 600; cursor: pointer;
+  transition: all 0.2s;
+}
+.daily-btn:hover { background: rgba(255,255,255,0.2); }
+.daily-btn.primary { background: var(--red); border-color: var(--red); }
+.daily-btn.primary:hover { background: var(--pink); }
+
+/* ===== 闪卡 ===== */
+.flashcard-area { perspective: 1000px; margin-bottom: 20px; }
+.flashcard {
+  width: 100%; max-width: 400px; height: 220px;
+  margin: 0 auto;
+  position: relative; cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.flashcard.flipped { transform: rotateY(180deg); }
+.fc-face {
+  position: absolute; width: 100%; height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px; padding: 24px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 8px;
+}
+.fc-front {
+  background: linear-gradient(135deg, var(--red), var(--pink));
+  color: white;
+}
+.fc-back {
+  background: var(--white);
+  border: 2px solid var(--border);
+  transform: rotateY(180deg);
+}
+.fc-char { font-size: 48px; font-weight: 800; }
+.fc-hint { font-size: 13px; opacity: 0.7; }
+.fc-py { font-size: 18px; color: var(--red); font-weight: 600; }
+.fc-meaning { font-size: 15px; color: var(--text); }
+.fc-en { font-size: 13px; color: var(--gray); }
+.fc-progress {
+  text-align: center; font-size: 13px; color: var(--gray);
+  margin-bottom: 12px;
+}
+.fc-actions { display: flex; gap: 10px; justify-content: center; margin-top: 16px; }
+.fc-btn {
+  flex: 1; max-width: 160px; padding: 12px;
+  border-radius: 12px; border: none;
+  font-size: 14px; font-weight: 700; cursor: pointer;
+  transition: all 0.2s;
+}
+.fc-btn-know { background: #d4edda; color: #28a745; }
+.fc-btn-know:hover { background: #28a745; color: white; }
+.fc-btn-unknown { background: #f8d7da; color: #dc3545; }
+.fc-btn-unknown:hover { background: #dc3545; color: white; }
+.fc-empty {
+  text-align: center; padding: 40px 20px;
+  color: var(--gray); font-size: 15px;
+}
+.fc-empty .fc-empty-icon { font-size: 40px; margin-bottom: 12px; }
+
+/* ===== 声调练习 ===== */
+.tone-game {
+  background: var(--white); border-radius: 20px;
+  border: 1px solid var(--border); padding: 28px 24px;
+  text-align: center; margin-bottom: 20px;
+}
+.tone-char-display {
+  font-size: 72px; font-weight: 900; color: var(--text);
+  margin-bottom: 8px; line-height: 1;
+}
+.tone-meaning { font-size: 14px; color: var(--gray); margin-bottom: 20px; }
+.tone-options {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 10px; margin-bottom: 20px;
+}
+.tone-opt {
+  padding: 14px 8px; border-radius: 12px;
+  border: 2px solid var(--border);
+  background: var(--white); cursor: pointer;
+  transition: all 0.2s; font-family: inherit;
+}
+.tone-opt:hover { border-color: var(--pink); background: var(--light-pink); }
+.tone-opt.correct { background: #d4edda; border-color: #28a745; color: #28a745; }
+.tone-opt.wrong { background: #f8d7da; border-color: #dc3545; color: #dc3545; }
+.tone-opt .to-num { font-size: 22px; font-weight: 800; display: block; }
+.tone-opt .to-name { font-size: 11px; color: var(--gray); }
+.tone-opt .to-example { font-size: 16px; font-weight: 700; }
+.tone-score-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--light-pink); border-radius: 10px; padding: 10px 16px;
+  font-size: 13px;
+}
+.tone-score-num { font-size: 20px; font-weight: 800; color: var(--red); }
+
+/* ===== 成语/网络梗搜索 ===== */
+.idiom-search-bar {
+  display: flex; gap: 8px; margin-bottom: 16px;
+}
+.idiom-input {
+  flex: 1; padding: 12px 16px;
+  border: 1.5px solid var(--border); border-radius: 12px;
+  font-size: 15px; font-family: inherit; outline: none;
+  transition: border-color 0.2s;
+}
+.idiom-input:focus { border-color: var(--pink); }
+.idiom-filter { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+.idiom-filter-btn {
+  padding: 6px 16px; border-radius: 20px;
+  border: 1.5px solid var(--border);
+  background: var(--white); color: var(--gray);
+  font-size: 12px; font-weight: 600; cursor: pointer;
+  transition: all 0.2s;
+}
+.idiom-filter-btn.active { background: var(--red); border-color: var(--red); color: white; }
+.idiom-results { display: flex; flex-direction: column; gap: 10px; }
+.idiom-card {
+  background: var(--white); border-radius: 14px;
+  border: 1.5px solid var(--border); padding: 16px 18px;
+  transition: all 0.2s;
+}
+.idiom-card:hover { border-color: var(--pink); box-shadow: 0 4px 12px rgba(255,36,66,0.08); }
+.idiom-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; }
+.idiom-word { font-size: 20px; font-weight: 800; color: var(--text); }
+.idiom-py { font-size: 13px; color: var(--red); }
+.idiom-type-badge {
+  padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700;
+  margin-left: auto;
+}
+.badge-idiom { background: #e8f0fe; color: #1a73e8; }
+.badge-slang { background: #fce8e6; color: var(--red); }
+.idiom-meaning { font-size: 14px; color: var(--text); margin-bottom: 4px; line-height: 1.6; }
+.idiom-en { font-size: 13px; color: var(--gray); margin-bottom: 6px; }
+.idiom-example {
+  background: var(--light-pink); border-radius: 8px;
+  padding: 8px 12px; font-size: 13px; color: var(--text);
+}
+.idiom-example::before { content: '例：'; color: var(--red); font-weight: 600; }
+
+/* ===== 社区广场 ===== */
+.community-post-box {
+  background: var(--white); border-radius: 16px;
+  border: 1.5px solid var(--border); padding: 20px;
+  margin-bottom: 20px;
+}
+.community-post-box textarea {
+  width: 100%; border: 1.5px solid var(--border);
+  border-radius: 10px; padding: 12px 14px;
+  font-size: 15px; font-family: inherit;
+  resize: vertical; min-height: 80px; outline: none;
+  transition: border-color 0.2s; line-height: 1.7;
+}
+.community-post-box textarea:focus { border-color: var(--pink); }
+.community-post-actions {
+  display: flex; align-items: center;
+  justify-content: space-between; margin-top: 10px;
+  flex-wrap: wrap; gap: 8px;
+}
+.community-post-hint { font-size: 12px; color: var(--gray); }
+.community-submit-btn {
+  padding: 10px 24px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--red), var(--pink));
+  color: white; border: none; font-size: 14px;
+  font-weight: 700; cursor: pointer; transition: all 0.2s;
+}
+.community-submit-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255,36,66,0.3); }
+.community-feed { display: flex; flex-direction: column; gap: 12px; }
+.community-item {
+  background: var(--white); border-radius: 14px;
+  border: 1.5px solid var(--border); padding: 16px 18px;
+  transition: all 0.2s;
+}
+.community-item:hover { border-color: var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.ci-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.ci-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--red), var(--pink));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; color: white; font-weight: 700; flex-shrink: 0;
+}
+.ci-name { font-size: 14px; font-weight: 700; color: var(--text); }
+.ci-flag { font-size: 16px; }
+.ci-time { font-size: 11px; color: var(--gray); margin-left: auto; }
+.ci-text {
+  font-size: 16px; line-height: 1.8; margin-bottom: 10px;
+  word-break: break-word;
+}
+.ci-text .w-hanzi { color: var(--red); font-weight: 700; }
+.ci-text .w-english { color: #28a745; font-style: italic; }
+.ci-footer { display: flex; align-items: center; gap: 12px; }
+.ci-like-btn {
+  display: flex; align-items: center; gap: 5px;
+  padding: 5px 12px; border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--white); color: var(--gray);
+  font-size: 13px; cursor: pointer; transition: all 0.2s;
+}
+.ci-like-btn:hover, .ci-like-btn.liked {
+  border-color: var(--red); color: var(--red);
+  background: var(--light-pink);
+}
+.ci-lang-tag {
+  font-size: 11px; color: var(--gray);
+  background: #f5f5f5; padding: 3px 8px; border-radius: 6px;
+}
+.community-empty {
+  text-align: center; padding: 40px 20px;
+  color: var(--gray); font-size: 15px;
+}
+.community-empty .ce-icon { font-size: 40px; margin-bottom: 12px; }
+
+@media (max-width: 600px) {
+  .tone-options { grid-template-columns: repeat(2, 1fr); }
+  .zone-btn { min-width: 70px; font-size: 11px; }
+  .zone-btn .zb-icon { font-size: 16px; }
+}
+
+
+  /* ===== MOBILE OPTIMIZATION ===== */
+  /* 底部导航栏（移动端） */
+  .mobile-nav {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    padding: 8px 0 env(safe-area-inset-bottom, 8px);
+    z-index: 200;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+  }
+  .mobile-nav-inner {
+    display: flex; justify-content: space-around; align-items: center;
+  }
+  .mnav-btn {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 3px; padding: 6px 12px;
+    border: none; background: none;
+    color: var(--gray); font-size: 10px; font-weight: 600;
+    cursor: pointer; transition: color 0.2s;
+    min-width: 60px;
+  }
+  .mnav-btn .mnav-icon { font-size: 20px; line-height: 1; }
+  .mnav-btn.active { color: var(--red); }
+  .mnav-btn:hover { color: var(--red); }
+
+  /* 移动端隐藏顶部zone-nav，用底部导航代替 */
+  @media (max-width: 640px) {
+    .mobile-nav { display: block; }
+    .zone-nav { display: none; }
+    body { padding-bottom: 70px; }
+
+    /* Hero 紧凑化 */
+    .hero-section { padding: 20px 16px 16px; }
+    .hero-title { font-size: 28px; gap: 8px; }
+    .hero-sub { font-size: 13px; }
+    .hero-stats { padding: 12px 16px; gap: 0; }
+    .hstat { padding: 0 10px; }
+    .hstat-num { font-size: 18px; }
+    .hstat-label { font-size: 10px; }
+
+    /* 卖点卡片单列 */
+    .selling-points { grid-template-columns: 1fr; padding: 0 12px; gap: 12px; }
+    .sp-card { padding: 18px 16px; }
+    .sp-featured { margin-top: 16px; }
+
+    /* 翻译器竖排 */
+    .translator { grid-template-columns: 1fr; }
+    .swap-col {
+      border: none; border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 10px; background: var(--light-pink);
+    }
+    .btn-swap { transform: rotate(90deg); }
+    .btn-swap:hover { transform: rotate(270deg); }
+
+    /* 语言选择器紧凑 */
+    .lang-picker-label { display: none; }
+    .lang-picker select { font-size: 12px; padding: 4px 8px; }
+
+    /* 卖点按钮全宽 */
+    .sp-btn { width: 100%; text-align: center; }
+
+    /* 偽中国語公式换行 */
+    .formula { gap: 4px; padding: 10px 12px; }
+    .formula-item { padding: 6px 8px; font-size: 11px; }
+
+    /* 声调练习2列 */
+    .tone-options { grid-template-columns: repeat(2, 1fr); }
+
+    /* 闪卡高度 */
+    .flashcard { height: 180px; }
+    .fc-char { font-size: 40px; }
+
+    /* 社区输入框 */
+    .community-post-actions { flex-direction: column; align-items: stretch; }
+    .community-submit-btn { width: 100%; }
+
+    /* 成语搜索 */
+    .idiom-search-bar { flex-direction: column; }
+
+    /* 主卡片边距 */
+    .main-card { padding: 0 8px 80px; }
+    .zone-content { padding: 16px 8px 80px; }
+
+    /* 标签栏滚动 */
+    .tabs { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+    .tab-btn { white-space: nowrap; flex-shrink: 0; }
+    .sub-tabs { overflow-x: auto; flex-wrap: nowrap; }
+    .sub-tab { white-space: nowrap; flex-shrink: 0; }
+
+    /* 偽中国語模式tab */
+    .mode-tabs { overflow-x: auto; }
+    .mode-tab { min-width: 80px; font-size: 11px; padding: 12px 8px; }
+
+    /* 触摸友好的按钮尺寸 */
+    .btn-translate { padding: 14px 24px; font-size: 15px; }
+    .fc-btn { padding: 14px; font-size: 15px; }
+    .tone-opt { padding: 16px 8px; }
+
+    /* 社交证明 */
+    .proof-item { font-size: 12px; }
+
+    /* 页面标题 */
+    .logo-cn { font-size: 16px; }
+    .logo-en { display: none; }
+  }
+
+  @media (max-width: 400px) {
+    .hero-title { font-size: 24px; }
+    .hstat-divider { display: none; }
+    .hstat { padding: 0 6px; }
+  }
+
+  /* 触摸设备优化 */
+  @media (hover: none) {
+    .sp-card:hover { transform: none; }
+    .btn-translate:hover { transform: none; }
+    .example-chip:hover { transform: none; }
+  }
+
+  /* 安全区域适配（iPhone刘海/底部横条） */
+  @supports (padding: env(safe-area-inset-bottom)) {
+    .mobile-nav { padding-bottom: calc(8px + env(safe-area-inset-bottom)); }
+  }
+
+
+  /* 社区解码结果 */
+  .ci-decode-btn {
+    padding: 5px 12px; border-radius: 8px;
+    border: 1.5px solid var(--border);
+    background: var(--white); color: var(--gray);
+    font-size: 12px; cursor: pointer; transition: all 0.2s;
+  }
+  .ci-decode-btn:hover { border-color: var(--blue); color: var(--blue); }
+  .ci-decode-result { margin-top: 10px; }
+  .ci-decode-inner {
+    background: #f8f9fa; border-radius: 10px; padding: 12px;
+    border: 1px solid var(--border);
+  }
+  .cdi-tokens { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+  .cdi-stats { font-size: 12px; color: var(--gray); }
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a class="logo" href="#">
+    <div class="logo-icon">说</div>
+    <div class="logo-text">
+      <span class="logo-cn" data-t="logo_cn">说中文</span>
+      <span class="logo-en" data-t="logo_en">ShuoZhongWen</span>
+    </div>
+  </a>
+  <div class="lang-picker">
+    <span class="lang-picker-label" data-t="lang_label">语言</span>
+    <select onchange="setUiLang(this.value)" id="uiLangSel">
+      <option value="zh">🇨🇳 中文</option>
+      <option value="en">🇺🇸 English</option>
+      <option value="ja">🇯🇵 日本語</option>
+      <option value="ko">🇰🇷 한국어</option>
+    </select>
+  </div>
+  <div class="header-badge" data-t="header_badge">🔥 全球中文热</div>
+</header>
+
+<!-- HERO -->
+<div id="page-hero"></div>
+<div id="page-selling"></div>
+<div id="page-social"></div>
+
+<!-- ZONE NAV -->
+<div class="zone-nav">
+  <button class="zone-btn active" data-zone="translate" onclick="switchZone('translate')">
+    <span class="zb-icon">🔄</span><span data-t="nav_translate">翻译</span></button>
+  <button class="zone-btn" data-zone="learn" onclick="switchZone('learn')">
+    <span class="zb-icon">📚</span><span data-t="nav_learn">学习区</span></button>
+  <button class="zone-btn" data-zone="fun" onclick="switchZone('fun')">
+    <span class="zb-icon">🎮</span><span data-t="nav_fun">趣味区</span></button>
+  <button class="zone-btn" data-zone="interact" onclick="switchZone('interact')">
+    <span class="zb-icon">💬</span><span data-t="nav_interact">互动区</span></button>
+</div>
+
+<div id="zone-translate" class="zone-panel">
+<!-- TABS -->
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab('translate')" data-t="tab_translate">🔄 翻译 & 学习</button>
+  <button class="tab-btn" onclick="switchTab('pinyin')" data-t="tab_pinyin">🔤 拼音练习</button>
+  <button class="tab-btn" onclick="switchTab('fun')" data-t="tab_fun_inner">🎮 趣味互动</button>
+  <button class="tab-btn" onclick="switchTab('pseudo')" data-t="tab_pseudo">🔐 偽中国語2.0</button>
+</div>
+
+<!-- MAIN CARD -->
+<div class="main-card">
+
+  <!-- TAB: TRANSLATE -->
+  <div id="tab-translate">
+    <div class="card">
+      <div class="translator">
+        <!-- INPUT PANEL -->
+        <div class="trans-panel">
+          <div class="trans-panel-header">
+            <div class="lang-selector">
+              <span>🌐</span>
+              <select id="sourceLang" onchange="onSourceLangChange()">
+                <option value="auto">自动检测</option>
+                <option value="ja">日语 🇯🇵</option>
+                <option value="en">英语 🇺🇸</option>
+                <option value="ko">韩语 🇰🇷</option>
+                <option value="fr">法语 🇫🇷</option>
+                <option value="de">德语 🇩🇪</option>
+                <option value="es">西班牙语 🇪🇸</option>
+                <option value="ru">俄语 🇷🇺</option>
+                <option value="ar">阿拉伯语 🇸🇦</option>
+                <option value="pt">葡萄牙语 🇧🇷</option>
+                <option value="it">意大利语 🇮🇹</option>
+                <option value="th">泰语 🇹🇭</option>
+                <option value="vi">越南语 🇻🇳</option>
+                <option value="zh">中文 🇨🇳</option>
+              </select>
+            </div>
+            <span class="char-count" id="charCount">0 / 500</span>
+          </div>
+          <textarea
+            id="inputText"
+            placeholder="在这里输入任何语言的文字...&#10;&#10;例如：&#10;日语：こんにちは、中国語を勉強しています&#10;英语：I want to learn Chinese&#10;韩语：안녕하세요"
+            maxlength="500"
+            oninput="onInput()"
+          ></textarea>
+          <div class="trans-actions">
+            <button class="btn-clear" onclick="clearInput()" data-t="trans_clear">✕ 清空</button>
+          </div>
+        </div>
+
+        <!-- SWAP -->
+        <div class="swap-col">
+          <button class="btn-swap" onclick="swapLangs()" title="交换语言">⇄</button>
+        </div>
+
+        <!-- OUTPUT PANEL -->
+        <div class="output-panel">
+          <div class="output-header">
+            <div class="output-lang-badge" id="outputLangBadge">
+              <span id="outputLangFlag">🇨🇳</span>
+              <span id="outputLangName">中文</span>
+            </div>
+            <button class="btn-copy" id="copyBtn" onclick="copyResult()">复制</button>
+          </div>
+          <div class="output-text" id="outputText">
+            <div class="output-placeholder">
+              <span>✨</span>
+              <div data-t="trans_output_placeholder">翻译结果将显示在这里</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRANSLATE BAR -->
+      <div class="translate-bar">
+        <div class="translate-options">
+          <button class="option-chip active" id="chip-pinyin" onclick="toggleOption('pinyin')">
+            🔤 显示拼音
+          </button>
+          <button class="option-chip active" id="chip-vocab" onclick="toggleOption('vocab')">
+            📖 词汇解释
+          </button>
+          <button class="option-chip" id="chip-example" onclick="toggleOption('example')">
+            💬 例句
+          </button>
+        </div>
+        <button class="btn-translate" id="translateBtn" onclick="doTranslate()">
+          <span id="btnText" data-t="trans_btn">翻译</span>
+          <span>→</span>
+        </button>
+      </div>
+
+      <!-- PINYIN RESULT -->
+      <div class="pinyin-block" id="pinyinBlock">
+        <div class="pinyin-title">📖 拼音注音</div>
+        <div class="pinyin-chars" id="pinyinChars"></div>
+      </div>
+
+      <!-- VOCAB BLOCK -->
+      <div class="vocab-block" id="vocabBlock">
+        <div class="vocab-title">📚 关键词汇</div>
+        <div class="vocab-list" id="vocabList"></div>
+      </div>
+    </div>
+
+    <!-- EXAMPLES -->
+    <div class="examples-section">
+      <div class="section-title" data-t="trans_quick">⚡ 快速体验 — 点击试试</div>
+      <div class="examples-grid" id="examplesGrid"></div>
+    </div>
+  </div>
+
+  <!-- TAB: PINYIN -->
+  <div id="tab-pinyin" style="display:none">
+    <div class="card" style="padding:28px">
+      <div class="section-title">🔤 拼音练习模式</div>
+      <p style="color:var(--gray);font-size:14px;margin-bottom:20px;line-height:1.7" data-t="pinyin_desc">输入中文，自动生成带拼音的注音版本，帮助外国朋友学习发音。</p>
+      <textarea
+        id="pinyinInput"
+        style="width:100%;border:1.5px solid var(--border);border-radius:12px;padding:16px;font-size:16px;min-height:120px;outline:none;font-family:inherit;resize:vertical"
+        placeholder="输入中文，例如：你好，我想学中文！"
+        oninput="generatePinyin()"
+      ></textarea>
+      <div id="pinyinOutput" style="margin-top:20px;min-height:80px"></div>
+    </div>
+  </div>
+
+  <!-- TAB: FUN -->
+  <div id="tab-fun" style="display:none">
+    <div class="fun-section">
+      <div class="section-title">🎮 趣味互动</div>
+      <p style="color:var(--gray);font-size:14px;line-height:1.7">
+        借鉴TikTok难民涌入小红书的文化热潮，用游戏化方式学中文。
+      </p>
+      <div class="fun-grid" id="funGrid"></div>
+    </div>
+    <div class="card" style="margin-top:20px;padding:24px" id="funContent">
+      <div style="text-align:center;color:var(--gray);padding:40px 0">
+        <div style="font-size:40px;margin-bottom:12px">👆</div>
+        <div>选择上方的趣味模式开始</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- TAB: PSEUDO -->
+  <div id="tab-pseudo" style="display:none">
+    <div style="margin-bottom:16px">
+<!-- HERO -->
+<div class="hero-banner">
+  <div class="badge">🔥 2025年小红书爆火现象</div>
+  <h2>「君this言葉<span class="highlight">閲読可能</span>?」<br>中日英三国人都能看懂的密码</h2>
+  <p>日本网友@安处岛 的天才发现：汉字名词 + 英语语法词 = 三国人都能读懂，翻译器却翻不好</p>
+  <div class="formula">
+    <div class="formula-item hanzi">漢字名詞<br><small>中日共通</small></div>
+    <div class="formula-item plus">+</div>
+    <div class="formula-item english">English<br><small>语法/副词</small></div>
+    <div class="formula-item equals">=</div>
+    <div class="formula-item result">偽中国語2.0<br><small>三国都懂</small></div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="mode-tabs">
+  <button class="mode-tab active" onclick="switchPseudoMode('generate')" data-t="pseudo_tab_gen">⚡ 生成密码</button>
+  <button class="mode-tab" onclick="switchPseudoMode('decode')" data-t="pseudo_tab_decode">🔍 解码分析</button>
+  <button class="mode-tab" onclick="switchPseudoMode('dialogs')" data-t="pseudo_tab_dialogs">💬 真实对话</button>
+  <button class="mode-tab" onclick="switchPseudoMode('explain')" data-t="pseudo_tab_explain">📖 原理解析</button>
+</div>
+
+<div class="main">
+
+  <!-- MODE: GENERATE -->
+  <div id="mode-generate">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <h3 data-t="trans_title">⚡ 三语 → 偽中国語2.0 生成器</h3>
+          <p data-t="trans_desc">输入中文、日语或韩语，自动转换成三国人都能看懂的"密码"</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="ls-btn active" data-lang="zh" onclick="setInputLang('zh')">🇨🇳 中文</button>
+          <button class="ls-btn" data-lang="ja" onclick="setInputLang('ja')">🇯🇵 日語</button>
+          <button class="ls-btn" data-lang="ko" onclick="setInputLang('ko')">🇰🇷 한국어</button>
+          <button class="ls-btn" data-lang="fr" onclick="setInputLang('fr')">🇫🇷 Français</button>
+          <button class="ls-btn" data-lang="de" onclick="setInputLang('de')">🇩🇪 Deutsch</button>
+          <button class="ls-btn" data-lang="es" onclick="setInputLang('es')">🇪🇸 Español</button>
+        </div>
+        <div class="quick-fill" id="quickFill"></div>
+        <textarea class="gen-input" id="genInput"
+          placeholder="输入中文句子，例如：&#10;我今天很开心，因为我的猫很可爱&#10;你喜欢中国文化吗？我觉得汉字很美"></textarea>
+        <button class="btn-generate" onclick="doGenerate()">
+          <span data-t="pseudo_gen_btn">🔐 生成偽中国語2.0</span>
+        </button>
+        <div class="result-box" id="resultBox">
+          <div class="result-label">偽中国語 2.0 · 三国可読</div>
+          <div class="result-text" id="resultText"></div>
+          <div class="annotations" id="annotations"></div>
+          <div class="result-actions">
+            <button class="result-btn primary" onclick="copyPseudo()" data-t="pseudo_copy">📋 复制密码</button>
+            <button class="result-btn" onclick="decodeCurrent()">🔍 解码分析</button>
+            <button class="result-btn" onclick="shareToChat()" data-t="pseudo_share">💬 分享给朋友</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODE: DECODE -->
+  <div id="mode-decode" style="display:none">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <h3>🔍 偽中国語解码器</h3>
+          <p>粘贴一段偽中国語，分析其中的汉字、英语、日语成分，还原三语含义</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <textarea class="decode-input" id="decodeInput"
+          placeholder="粘贴偽中国語，例如：&#10;君's 提案 is very 有趣. 我 am 尝试 this 方式."></textarea>
+        <div class="quick-fill">
+          <div class="quick-chip" onclick="fillDecode(&quot;君\u2019s 提案 is very 有趣. 我 am 尝试 this 方式.&quot;)">示例1</div>
+          <div class="quick-chip" onclick="fillDecode('我 have 猫. 彼 is very 可愛. 君 want to see?')">示例2</div>
+          <div class="quick-chip" onclick="fillDecode('偽中国語2.0 天才! 俺 totally 佩服!')">示例3</div>
+        </div>
+        <button class="btn-decode" onclick="doDecode()">🔍 解码分析</button>
+        <div class="decode-result" id="decodeResult">
+          <div class="legend" id="decodeLegend">
+            <div class="legend-item"><div class="legend-dot" style="background:#ff2442"></div data-t="decode_legend_hanzi">汉字（中日共通名词）</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#28a745"></div data-t="decode_legend_en">英语（语法/副词）</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#0066cc"></div data-t="decode_legend_ja">日语假名</div>
+          </div>
+          <div class="token-flow" id="tokenFlow"></div>
+          <div class="decode-meaning" id="decodeMeaning"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODE: DIALOGS -->
+  <div id="mode-dialogs" style="display:none">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <h3>💬 真实对话还原</h3>
+          <p>小红书上中日美三国网友用偽中国語2.0真实互动的场景</p>
+        </div>
+      </div>
+      <div class="card-body" id="dialogsBody"></div>
+    </div>
+  </div>
+
+  <!-- MODE: EXPLAIN -->
+  <div id="mode-explain" style="display:none">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <h3>📖 原理解析</h3>
+          <p>为什么这个"密码"三国人都能看懂，翻译器却翻不好？</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="explainer-grid" id="explainerGrid"></div>
+        <div style="margin-top:20px;padding:16px;background:var(--light-gold);border-radius:12px;border:1px solid #ffe082">
+          <div style="font-weight:700;margin-bottom:8px;font-size:14px">🧠 为什么翻译器翻不好？</div>
+          <div style="font-size:13px;color:var(--text);line-height:1.8">
+            偽中国語2.0不是任何一种标准语言，它是<strong>三语混合体</strong>。<br>
+            翻译器需要先判断"这是什么语言"，但它无法归类——<br>
+            • 按中文翻译：英语部分会被当成乱码<br>
+            • 按日文翻译：汉字含义会被误读<br>
+            • 按英文翻译：汉字完全无法处理<br>
+            <br>
+            但人类大脑可以同时激活三套语言知识，自动拼接含义。<br>
+            这就是它被称为"无法被破译"的反讽——<strong>它不是加密，而是人人都懂，机器不懂。</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="share-box">
+      <h3 data-t="pseudo_share_title">🌏 这就是语言的魔法</h3>
+      <p>汉字用40%的力量，串起了中日两国年轻人的网络桥梁<br>加上初中英语，三国人都能聊天了</p>
+      <div class="share-btns">
+        <button class="share-btn" onclick="copyShareText()" data-t="pseudo_copy_share">📋 复制分享文案</button>
+        <button class="share-btn" onclick="switchPseudoMode('generate')" data-t="pseudo_try_gen">⚡ 立即生成密码</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+    </div>
+  </div>
+
+</div><!-- /main-card -->
+</div><!-- /zone-translate -->
+
+  <!-- ZONE: LEARN -->
+  <div id="zone-learn" class="zone-panel" style="display:none">
+    <div class="sub-tabs">
+      <button class="sub-tab learn-sub-tab active" data-tab="daily" onclick="switchLearnTab('daily')" data-t="daily_title" data-t="learn_daily">每日一句</button>
+      <button class="sub-tab learn-sub-tab" data-tab="flash" onclick="switchLearnTab('flash')" data-t="flash_title" data-t="learn_flash">闪卡练习</button>
+      <button class="sub-tab learn-sub-tab" data-tab="tone" onclick="switchLearnTab('tone')" data-t="tone_title" data-t="learn_tone">声调练习</button>
+    </div>
+    <div class="zone-content">
+      <div id="learn-daily"><div class="daily-card" id="daily-content"><div style="text-align:center;padding:20px;opacity:0.5">加载中...</div></div></div>
+      <div id="learn-flash" style="display:none"><div id="flash-content"></div></div>
+      <div id="learn-tone" style="display:none"><div id="tone-content"></div></div>
+    </div>
+  </div>
+
+  <!-- ZONE: FUN -->
+  <div id="zone-fun" class="zone-panel" style="display:none">
+    <div class="sub-tabs">
+      <button class="sub-tab fun-sub-tab active" data-tab="idiom" onclick="switchFunTab('idiom')" data-t="idiom_title" data-t="fun_idiom">成语 & 网络梗</button>
+      <button class="sub-tab fun-sub-tab" data-tab="pseudo-fun" onclick="switchFunTab('pseudo-fun')">🔐 偽中国語</button>
+    </div>
+    <div class="zone-content">
+      <div id="fun-idiom">
+        <div class="idiom-search-bar"><input class="idiom-input" id="idiom-input" type="text" placeholder="搜索成语或网络梗..." data-tp="idiom_placeholder" oninput="renderIdiomSearch(this.value)"></div>
+        <div class="idiom-filter">
+          <button class="idiom-filter-btn active" data-f="all" onclick="setIdiomFilter('all')" data-t="idiom_all">全部</button>
+          <button class="idiom-filter-btn" data-f="idiom" onclick="setIdiomFilter('idiom')" data-t="idiom_idiom">成语</button>
+          <button class="idiom-filter-btn" data-f="slang" onclick="setIdiomFilter('slang')" data-t="idiom_slang">网络梗</button>
+        </div>
+        <div class="idiom-results" id="idiom-results"></div>
+      </div>
+      <div id="fun-pseudo-fun" style="display:none">
+        <div style="padding:8px 0 16px;color:var(--gray);font-size:13px">
+          生成你的偽中国語2.0密码，一键发布到互动区！
+        </div>
+
+        <!-- 语言选择器 -->
+        <div class="lang-switcher" id="funLangSwitcher">
+          <button class="ls-btn active" data-lang="zh" onclick="setFunInputLang('zh')">🇨🇳 中文</button>
+          <button class="ls-btn" data-lang="ja" onclick="setFunInputLang('ja')">🇯🇵 日語</button>
+          <button class="ls-btn" data-lang="ko" onclick="setFunInputLang('ko')">🇰🇷 한국어</button>
+          <button class="ls-btn" data-lang="fr" onclick="setFunInputLang('fr')">🇫🇷 Français</button>
+          <button class="ls-btn" data-lang="de" onclick="setFunInputLang('de')">🇩🇪 Deutsch</button>
+          <button class="ls-btn" data-lang="es" onclick="setFunInputLang('es')">🇪🇸 Español</button>
+        </div>
+
+        <!-- 快速示例 -->
+        <div class="quick-fill" id="funQuickFill" style="margin:10px 0"></div>
+
+        <!-- 输入框 -->
+        <textarea class="gen-input" id="funGenInput"
+          placeholder="输入中文句子，例如：我今天很开心，因为我的猫很可爱"
+          style="margin-bottom:10px"></textarea>
+
+        <!-- 生成按钮 -->
+        <button class="btn-generate" onclick="doFunGenerate()" style="margin-bottom:16px">
+          <span>🔐 生成偽中国語2.0</span>
+        </button>
+
+        <!-- 结果展示 -->
+        <div class="result-box" id="funResultBox">
+          <div class="result-label">偽中国語 2.0 · 三国可読</div>
+          <div class="result-text" id="funResultText"></div>
+          <div class="annotations" id="funAnnotations"></div>
+          <div class="result-actions">
+            <button class="result-btn primary" onclick="copyFunPseudo()">📋 复制密码</button>
+            <button class="result-btn" onclick="postFunToInteract()" style="background:#28a745;border-color:#28a745">💬 发布到互动区</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ZONE: INTERACT -->
+  <div id="zone-interact" class="zone-panel" style="display:none">
+    <div class="zone-content">
+      <div class="community-post-box">
+        <textarea id="community-input" rows="3" placeholder="用偽中国語2.0写一句话，分享给全世界..." data-tp="community_placeholder"></textarea>
+        <div class="community-post-actions">
+          <span class="community-post-hint">💡 试试：我 today is very 开心, because 猫 is very 可爱!</span>
+          <button class="community-submit-btn" onclick="submitPost()" data-t="community_submit">发布</button>
+        </div>
+      </div>
+      <div class="community-feed" id="community-feed"></div>
+    </div>
+  </div>
+
+
+<!-- FOOTER -->
+<footer id="page-footer"></footer>
+
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ===== ALL DATA =====
+const LANG_MAP = {
+  auto: { name: '自动检测', flag: '🌐' },
+  ja:   { name: '日语', flag: '🇯🇵' },
+  en:   { name: '英语', flag: '🇺🇸' },
+  ko:   { name: '韩语', flag: '🇰🇷' },
+  fr:   { name: '法语', flag: '🇫🇷' },
+  de:   { name: '德语', flag: '🇩🇪' },
+  es:   { name: '西班牙语', flag: '🇪🇸' },
+  ru:   { name: '俄语', flag: '🇷🇺' },
+  ar:   { name: '阿拉伯语', flag: '🇸🇦' },
+  pt:   { name: '葡萄牙语', flag: '🇧🇷' },
+  it:   { name: '意大利语', flag: '🇮🇹' },
+  th:   { name: '泰语', flag: '🇹🇭' },
+  vi:   { name: '越南语', flag: '🇻🇳' },
+  zh:   { name: '中文', flag: '🇨🇳' }
+};
+
+const EXAMPLES = [
+  { lang: 'ja', flag: '🇯🇵', text: 'こんにちは、中国語を勉強しています', label: '日语' },
+  { lang: 'en', flag: '🇺🇸', text: 'I want to learn Chinese, it\'s so cool!', label: '英语' },
+  { lang: 'ko', flag: '🇰🇷', text: '안녕하세요! 중국어 배우고 싶어요', label: '韩语' },
+  { lang: 'fr', flag: '🇫🇷', text: 'J\'apprends le chinois depuis TikTok', label: '法语' },
+  { lang: 'de', flag: '🇩🇪', text: 'Ich lerne Chinesisch, weil ich Xiaohongshu liebe', label: '德语' },
+  { lang: 'es', flag: '🇪🇸', text: 'Quiero aprender chino mandarín', label: '西班牙语' },
+  { lang: 'ru', flag: '🇷🇺', text: 'Я учу китайский язык каждый день', label: '俄语' },
+  { lang: 'ja', flag: '🇯🇵', text: '猫の写真を見せてください！', label: '日语·猫税' }
+];
+
+// 拼音数据库（常用汉字）
+
+const PINYIN_MAP = {
+  '你': 'nǐ', '好': 'hǎo', '我': 'wǒ', '是': 'shì', '的': 'de',
+  '了': 'le', '在': 'zài', '有': 'yǒu', '他': 'tā', '她': 'tā',
+  '们': 'men', '这': 'zhè', '那': 'nà', '不': 'bù', '也': 'yě',
+  '都': 'dōu', '说': 'shuō', '中': 'zhōng', '文': 'wén', '学': 'xué',
+  '习': 'xí', '语': 'yǔ', '言': 'yán', '很': 'hěn', '多': 'duō',
+  '人': 'rén', '来': 'lái', '去': 'qù', '看': 'kàn', '想': 'xiǎng',
+  '会': 'huì', '能': 'néng', '要': 'yào', '可': 'kě', '以': 'yǐ',
+  '什': 'shén', '么': 'me', '为': 'wèi', '吗': 'ma', '呢': 'ne',
+  '啊': 'a', '哦': 'ó', '哈': 'hā', '嗯': 'ń', '喂': 'wèi',
+  '谢': 'xiè', '请': 'qǐng', '对': 'duì', '没': 'méi', '和': 'hé',
+  '大': 'dà', '小': 'xiǎo', '上': 'shàng', '下': 'xià', '里': 'lǐ',
+  '时': 'shí', '间': 'jiān', '今': 'jīn', '天': 'tiān', '明': 'míng',
+  '年': 'nián', '月': 'yuè', '日': 'rì', '号': 'hào', '点': 'diǎn',
+  '分': 'fēn', '秒': 'miǎo', '吃': 'chī', '喝': 'hē', '睡': 'shuì',
+  '走': 'zǒu', '跑': 'pǎo', '飞': 'fēi', '爱': 'ài', '喜': 'xǐ',
+  '欢': 'huān', '美': 'měi', '好': 'hǎo', '棒': 'bàng', '厉': 'lì',
+  '害': 'hài', '牛': 'niú', '猫': 'māo', '狗': 'gǒu', '鱼': 'yú',
+  '花': 'huā', '树': 'shù', '山': 'shān', '水': 'shuǐ', '火': 'huǒ',
+  '风': 'fēng', '雨': 'yǔ', '雪': 'xuě', '云': 'yún', '太': 'tài',
+  '阳': 'yáng', '月': 'yuè', '星': 'xīng', '地': 'dì', '球': 'qiú',
+  '中': 'zhōng', '国': 'guó', '日': 'rì', '本': 'běn', '美': 'měi',
+  '韩': 'hán', '法': 'fǎ', '德': 'dé', '英': 'yīng', '俄': 'é',
+  '朋': 'péng', '友': 'yǒu', '家': 'jiā', '妈': 'mā', '爸': 'bà',
+  '哥': 'gē', '姐': 'jiě', '弟': 'dì', '妹': 'mèi', '老': 'lǎo',
+  '师': 'shī', '同': 'tóng', '学': 'xué', '工': 'gōng', '作': 'zuò',
+  '钱': 'qián', '买': 'mǎi', '卖': 'mài', '吃': 'chī', '饭': 'fàn',
+  '喝': 'hē', '茶': 'chá', '咖': 'kā', '啡': 'fēi', '奶': 'nǎi',
+  '红': 'hóng', '绿': 'lǜ', '蓝': 'lán', '黄': 'huáng', '白': 'bái',
+  '黑': 'hēi', '粉': 'fěn', '紫': 'zǐ', '橙': 'chéng', '金': 'jīn',
+  '一': 'yī', '二': 'èr', '三': 'sān', '四': 'sì', '五': 'wǔ',
+  '六': 'liù', '七': 'qī', '八': 'bā', '九': 'jiǔ', '十': 'shí',
+  '百': 'bǎi', '千': 'qiān', '万': 'wàn', '亿': 'yì', '零': 'líng'
+};
+
+// 词汇解释数据库
+
+const VOCAB_DB = {
+  '你好': { pinyin: 'nǐ hǎo', meaning: '你好 — 最常用的问候语，相当于 Hello / こんにちは / 안녕하세요' },
+  '谢谢': { pinyin: 'xiè xiè', meaning: '谢谢 — 表示感谢，相当于 Thank you / ありがとう / 감사합니다' },
+  '再见': { pinyin: 'zài jiàn', meaning: '再见 — 告别用语，相当于 Goodbye / さようなら / 안녕히 가세요' },
+  '中文': { pinyin: 'zhōng wén', meaning: '中文 — 中国语言，即普通话/汉语' },
+  '学习': { pinyin: 'xué xí', meaning: '学习 — 学习、学习知识，相当于 Study / 勉強する / 공부하다' },
+  '朋友': { pinyin: 'péng yǒu', meaning: '朋友 — 朋友，相当于 Friend / 友達 / 친구' },
+  '猫': { pinyin: 'māo', meaning: '猫 — 猫咪，相当于 Cat / 猫（ねこ）/ 고양이' },
+  '爱': { pinyin: 'ài', meaning: '爱 — 爱，相当于 Love / 愛（あい）/ 사랑' },
+  '吃饭': { pinyin: 'chī fàn', meaning: '吃饭 — 吃饭，相当于 Eat / ご飯を食べる / 밥 먹다' },
+  '漂亮': { pinyin: 'piào liàng', meaning: '漂亮 — 美丽、好看，相当于 Beautiful / きれい / 예쁘다' }
+};
+
+// 趣味模式数据
+
+const FUN_MODES = [
+  { id: 'cattax', emoji: '🐱', title: '缴猫税', sub: '发猫咪照片\n融入小红书' },
+  { id: 'quiz',   emoji: '🎯', title: '中文测验', sub: '测测你的\n中文水平' },
+  { id: 'phrase', emoji: '💬', title: '日常用语', sub: '学10句\n必备中文' },
+  { id: 'kanji',  emoji: '漢', title: '汉字密码', sub: '中日汉字\n趣味对比' },
+  { id: 'tone',   emoji: '🎵', title: '声调练习', sub: '四声入门\n不再迷路' },
+  { id: 'meme',   emoji: '😂', title: '中文梗', sub: '学懂网络\n流行语' }
+];
+
+
+// ===== 法语偽中国語引擎 =====
+const FR_ENGINE = {
+  particles: [
+    ["qu'", "that "], ["c'est", "is"], ["n'est", "is not"],
+    ["je suis", "我 am"], ["tu es", "君 is"], ["il est", "彼 is"], ["elle est", "彼女 is"],
+    ["nous sommes", "我们 are"], ["vous êtes", "君们 are"],
+    ["je", "我"], ["tu", "君"], ["il", "彼"], ["elle", "彼女"],
+    ["nous", "我们"], ["vous", "君们"], ["ils", "彼们"], ["elles", "彼们"],
+    ["très", "very "], ["vraiment", "really "], ["trop", "too "],
+    ["aussi", "also "], ["encore", "again "], ["déjà", "already "],
+    ["toujours", "always "], ["jamais", "never "], ["peut-être", "maybe "],
+    ["mais", "but "], ["et", "and "], ["ou", "or "], ["donc", "so "],
+    ["parce que", "because "], ["si", "if "], ["avec", "with "],
+    ["dans", "in "], ["sur", "on "], ["pour", "for "], ["de", "of "],
+    ["est", "is"], ["sont", "are"], ["avoir", "have"], ["être", "be"],
+    ["aimer", "love"], ["vouloir", "want"], ["pouvoir", "can"],
+    ["aujourd'hui", "今日"], ["demain", "明日"], ["hier", "昨日"],
+    ["matin", "朝"], ["soir", "夜"], ["maintenant", "now"],
+    ["bonjour", "你好"], ["merci", "谢谢"], ["au revoir", "再见"],
+  ],
+  generate(text) {
+    let result = text.toLowerCase();
+    const annotations = [];
+    const rules = this.particles.sort((a,b) => b[0].length - a[0].length);
+    for (const [fr, en] of rules) {
+      if (result.includes(fr)) {
+        result = result.split(fr).join(" " + en + " ");
+        if (en !== fr && /[a-zA-Z一-鿿]/.test(en))
+          annotations.push({ cn: fr, en: en.trim() });
+      }
+    }
+    result = result.replace(/\s+/g, " ").trim();
+    return { text: result, annotations: annotations.slice(0, 8) };
+  }
+};
+
+// ===== 德语偽中国語引擎 =====
+const DE_ENGINE = {
+  particles: [
+    ["ich bin", "我 am"], ["du bist", "君 is"], ["er ist", "彼 is"], ["sie ist", "彼女 is"],
+    ["wir sind", "我们 are"], ["ihr seid", "君们 are"],
+    ["ich", "我"], ["du", "君"], ["er", "彼"], ["sie", "彼女"],
+    ["wir", "我们"], ["ihr", "君们"], ["sie", "彼们"],
+    ["sehr", "very "], ["wirklich", "really "], ["zu", "too "],
+    ["auch", "also "], ["noch", "still "], ["schon", "already "],
+    ["immer", "always "], ["nie", "never "], ["vielleicht", "maybe "],
+    ["aber", "but "], ["und", "and "], ["oder", "or "], ["also", "so "],
+    ["weil", "because "], ["wenn", "if "], ["mit", "with "],
+    ["in", "in "], ["auf", "on "], ["für", "for "], ["von", "of "],
+    ["ist", "is"], ["sind", "are"], ["haben", "have"], ["sein", "be"],
+    ["lieben", "love"], ["wollen", "want"], ["können", "can"],
+    ["heute", "今日"], ["morgen", "明日"], ["gestern", "昨日"],
+    ["morgens", "朝"], ["abends", "夜"], ["jetzt", "now"],
+    ["hallo", "你好"], ["danke", "谢谢"], ["tschüss", "再见"],
+  ],
+  generate(text) {
+    let result = text.toLowerCase();
+    const annotations = [];
+    const rules = this.particles.sort((a,b) => b[0].length - a[0].length);
+    for (const [de, en] of rules) {
+      if (result.includes(de)) {
+        result = result.split(de).join(" " + en + " ");
+        if (en !== de && /[a-zA-Z一-鿿]/.test(en))
+          annotations.push({ cn: de, en: en.trim() });
+      }
+    }
+    result = result.replace(/\s+/g, " ").trim();
+    return { text: result, annotations: annotations.slice(0, 8) };
+  }
+};
+
+// ===== 西班牙语偽中国語引擎 =====
+const ES_ENGINE = {
+  particles: [
+    ["yo soy", "我 am"], ["tú eres", "君 is"], ["él es", "彼 is"], ["ella es", "彼女 is"],
+    ["nosotros somos", "我们 are"], ["vosotros sois", "君们 are"],
+    ["yo", "我"], ["tú", "君"], ["él", "彼"], ["ella", "彼女"],
+    ["nosotros", "我们"], ["vosotros", "君们"], ["ellos", "彼们"],
+    ["muy", "very "], ["realmente", "really "], ["demasiado", "too "],
+    ["también", "also "], ["todavía", "still "], ["ya", "already "],
+    ["siempre", "always "], ["nunca", "never "], ["quizás", "maybe "],
+    ["pero", "but "], ["y", "and "], ["o", "or "], ["entonces", "so "],
+    ["porque", "because "], ["si", "if "], ["con", "with "],
+    ["en", "in "], ["sobre", "on "], ["para", "for "], ["de", "of "],
+    ["es", "is"], ["son", "are"], ["tener", "have"], ["ser", "be"],
+    ["amar", "love"], ["querer", "want"], ["poder", "can"],
+    ["hoy", "今日"], ["mañana", "明日"], ["ayer", "昨日"],
+    ["mañana", "朝"], ["noche", "夜"], ["ahora", "now"],
+    ["hola", "你好"], ["gracias", "谢谢"], ["adiós", "再见"],
+  ],
+  generate(text) {
+    let result = text.toLowerCase();
+    const annotations = [];
+    const rules = this.particles.sort((a,b) => b[0].length - a[0].length);
+    for (const [es, en] of rules) {
+      if (result.includes(es)) {
+        result = result.split(es).join(" " + en + " ");
+        if (en !== es && /[a-zA-Z一-鿿]/.test(en))
+          annotations.push({ cn: es, en: en.trim() });
+      }
+    }
+    result = result.replace(/\s+/g, " ").trim();
+    return { text: result, annotations: annotations.slice(0, 8) };
+  }
+};
+
+const UI_LANG = {
+  zh: {
+    nav_fun: '趣味区', nav_learn: '学习区', nav_interact: '互动区', nav_translate: '翻译',
+    daily_title: '每日一句', daily_btn: '换一句', daily_copy: '复制',
+    flash_title: '闪卡练习', flash_know: '认识 ✓', flash_unknown: '再看看 ↩',
+    flash_empty: '生词本是空的，先去翻译几个词吧',
+    flash_done: '本轮完成！共复习了',
+    flash_words: '个词',
+    tone_title: '声调练习', tone_listen: '🔊 播放', tone_correct: '正确！', tone_wrong: '再试试',
+    tone_score: '得分',
+    idiom_title: '成语 & 网络梗', idiom_placeholder: '搜索成语或网络梗...',
+    idiom_all: '全部', idiom_idiom: '成语', idiom_slang: '网络梗',
+    community_title: '密码广场', community_post: '发布我的密码', community_like: '赞',
+    community_placeholder: '用偽中国語2.0写一句话，分享给全世界...',
+    community_submit: '发布',
+    community_empty: '还没有人发布，来做第一个！',
+    lang_label: '语言',
+  },
+  en: {
+    nav_fun: 'Fun Zone', nav_learn: 'Learn', nav_interact: 'Community', nav_translate: 'Translate',
+    daily_title: 'Phrase of the Day', daily_btn: 'Next', daily_copy: 'Copy',
+    flash_title: 'Flashcards', flash_know: 'Got it ✓', flash_unknown: 'Again ↩',
+    flash_empty: 'No words saved yet. Go translate something first!',
+    flash_done: 'Round done! Reviewed',
+    flash_words: 'words',
+    tone_title: 'Tone Practice', tone_listen: '🔊 Play', tone_correct: 'Correct!', tone_wrong: 'Try again',
+    tone_score: 'Score',
+    idiom_title: 'Idioms & Slang', idiom_placeholder: 'Search idioms or internet slang...',
+    idiom_all: 'All', idiom_idiom: 'Idioms', idiom_slang: 'Slang',
+    community_title: 'Code Square', community_post: 'Post My Code', community_like: 'Like',
+    community_placeholder: 'Write in 偽中国語2.0, share with the world...',
+    community_submit: 'Post',
+    community_empty: 'No posts yet. Be the first!',
+    lang_label: 'Language',
+  },
+  ja: {
+    nav_fun: '楽しむ', nav_learn: '学習', nav_interact: 'コミュニティ', nav_translate: '翻訳',
+    daily_title: '今日の一言', daily_btn: '次へ', daily_copy: 'コピー',
+    flash_title: 'フラッシュカード', flash_know: '知ってる ✓', flash_unknown: 'もう一度 ↩',
+    flash_empty: '単語帳が空です。まず翻訳してみましょう',
+    flash_done: 'ラウンド完了！復習した単語：',
+    flash_words: '個',
+    tone_title: '声調練習', tone_listen: '🔊 再生', tone_correct: '正解！', tone_wrong: 'もう一度',
+    tone_score: 'スコア',
+    idiom_title: '成語・ネットスラング', idiom_placeholder: '成語やスラングを検索...',
+    idiom_all: '全部', idiom_idiom: '成語', idiom_slang: 'スラング',
+    community_title: '暗号広場', community_post: '暗号を投稿', community_like: 'いいね',
+    community_placeholder: '偽中国語2.0で一言書いて、世界に共有しよう...',
+    community_submit: '投稿',
+    community_empty: 'まだ投稿がありません。最初の投稿者になろう！',
+    lang_label: '言語',
+  },
+  ko: {
+    nav_fun: '재미존', nav_learn: '학습', nav_interact: '커뮤니티', nav_translate: '번역',
+    daily_title: '오늘의 한마디', daily_btn: '다음', daily_copy: '복사',
+    flash_title: '플래시카드', flash_know: '알아요 ✓', flash_unknown: '다시 ↩',
+    flash_empty: '단어장이 비어있어요. 먼저 번역해보세요!',
+    flash_done: '라운드 완료! 복습한 단어:',
+    flash_words: '개',
+    tone_title: '성조 연습', tone_listen: '🔊 재생', tone_correct: '정답!', tone_wrong: '다시 해봐요',
+    tone_score: '점수',
+    idiom_title: '성어 & 인터넷 유행어', idiom_placeholder: '성어나 유행어 검색...',
+    idiom_all: '전체', idiom_idiom: '성어', idiom_slang: '유행어',
+    community_title: '암호 광장', community_post: '내 암호 올리기', community_like: '좋아요',
+    community_placeholder: '偽中国語2.0로 한 문장 써서 세계와 공유해요...',
+    community_submit: '올리기',
+    community_empty: '아직 게시물이 없어요. 첫 번째가 되어보세요!',
+    lang_label: '언어',
+  },
+};
+
+const PAGE_TEXT = {
+  zh: {
+    // Hero
+    tag_fire: '🔥 2025年小红书爆火现象',
+    tag_tiktok: '🐱 TikTok难民专属',
+    tag_new: '✨ 全球首个三语密码生成器',
+    hero_line1: '任何语言',
+    hero_line2: '中文可读',
+    hero_sub: '中文 · 日語 · 한국어 · English · Français · Deutsch<br>粘贴进来，立刻看懂 · 还能生成只有三国人能懂的<strong>偽中国語密码</strong>',
+    stat1_label: 'TikTok难民已入驻',
+    stat2_label: '多邻国中文学习暴增',
+    stat3_label: '支持语种',
+    stat4_label: '国人都能看懂的密码',
+    // 卖点卡片
+    sp1_title: '全语种秒译中文',
+    sp1_desc: '12种语言一键翻译，自动标注拼音、解释词汇，外国人学中文零门槛',
+    sp1_btn: '立即体验 →',
+    sp2_badge: '🏆 核心卖点',
+    sp2_title: '偽中国語2.0 密码',
+    sp2_desc: '中日英三国人都能看懂，翻译器却翻不好的神奇语言——2025年小红书爆火现象',
+    sp2_flags: '🇨🇳✅ 🇯🇵✅ 🇺🇸✅ 🤖❌',
+    sp2_btn: '生成密码 →',
+    sp3_title: '趣味互动学中文',
+    sp3_desc: '猫税用语、四声练习、中文梗解读、汉字密码对比——学习从来不无聊',
+    sp3_btn: '开始玩 →',
+    sp3_tags: ['🐱 猫税', '🎵 四声', '漢 汉字', '😂 网络梗'],
+    // 社交证明
+    proof: [
+      '🇯🇵 <strong>日本用户</strong>：「我 finally understand 汉字! 偽中国語 is 天才!」',
+      '🇺🇸 <strong>TikTok难民</strong>：「I came for TikTok, stayed for 中文. 猫税 paid!」',
+      '🇰🇷 <strong>韩国用户</strong>：「한자 덕분에 중국어가 쉬워요! 我 love this site!」',
+      '🇨🇳 <strong>中国用户</strong>：「终于有个工具能帮我和外国朋友用偽中国語聊天了！」',
+      "🇫🇷 <strong>法国用户</strong>：「J'apprends le chinois ici. 汉字 is beautiful!」",
+      '🇩🇪 <strong>德国用户</strong>：「Xiaohongshu brought me here. 我 love 中文!」',
+    ],
+    // 翻译器
+    trans_title: '⚡ 三语 → 偽中国語2.0 生成器',
+    trans_desc: '输入中文、日语或韩语，自动转换成三国人都能看懂的"密码"',
+    trans_btn: '翻译',
+    trans_placeholder: '在这里输入任何语言的文字...',
+    pinyin_title: '🔤 拼音练习模式',
+    pinyin_desc: '输入中文，自动生成带拼音的注音版本，帮助外国朋友学习发音。',
+    pinyin_placeholder: '输入中文，例如：你好，我想学中文！',
+    // Footer
+    footer_brand: '说中文 · ShuoZhongWen | 全语种转中文学习平台',
+    footer_api: '翻译由 MyMemory API 提供 · 拼音数据本地生成',
+    logo_cn: "说中文",
+    logo_en: "ShuoZhongWen",
+    header_badge: "🔥 全球中文热",
+    tab_translate: "🔄 翻译 & 学习",
+    tab_pinyin: "🔤 拼音练习",
+    tab_fun_inner: "🎮 趣味互动",
+    tab_pseudo: "🔐 偽中国語2.0",
+    trans_output_placeholder: "翻译结果将显示在这里",
+    trans_copy: "复制",
+    trans_clear: "✕ 清空",
+    trans_show_pinyin: "🔤 显示拼音",
+    trans_vocab: "📖 词汇解释",
+    trans_example: "💬 例句",
+    trans_quick: "⚡ 快速体验",
+    learn_daily: "每日一句",
+    learn_flash: "闪卡练习",
+    learn_tone: "声调练习",
+    fun_idiom: "成语 & 网络梗",
+    fun_pseudo: "🔐 偽中国語",
+    community_submit: "发布",
+    pseudo_tab_gen: "⚡ 生成密码",
+    pseudo_tab_decode: "🔍 解码分析",
+    pseudo_tab_dialogs: "💬 真实对话",
+    pseudo_tab_explain: "📖 原理解析",
+    pseudo_gen_btn: "🔐 生成偽中国語2.0",
+    pseudo_copy: "📋 复制密码",
+    pseudo_share: "💬 分享给朋友",
+    pseudo_copy_share: "📋 复制分享文案",
+    pseudo_try_gen: "⚡ 立即生成密码",
+    decode_legend_hanzi: "汉字（中日共通名词）",
+    decode_legend_en: "英语（语法/副词）",
+    decode_legend_ja: "日语假名",
+    pseudo_share_title: "🌏 这就是语言的魔法",    footer_users: '位TikTok难民在此缴纳猫税',
+  },
+  en: {
+    tag_fire: '🔥 Viral on Xiaohongshu 2025',
+    tag_tiktok: '🐱 For TikTok Refugees',
+    tag_new: "✨ World's First Trilingual Code Generator",
+    hero_line1: 'Any Language',
+    hero_line2: 'Readable in Chinese',
+    hero_sub: 'Chinese · Japanese · Korean · English · Français · Deutsch<br>Paste it in, understand instantly · Generate <strong>偽中国語 codes</strong> only 3 nations can read',
+    stat1_label: 'TikTok refugees joined',
+    stat2_label: 'Duolingo Chinese learners surge',
+    stat3_label: 'Languages supported',
+    stat4_label: 'Nations can read the code',
+    sp1_title: 'Instant Translation to Chinese',
+    sp1_desc: '12 languages, one click. Auto pinyin, vocabulary explanations — zero barrier for Chinese learners',
+    sp1_btn: 'Try Now →',
+    sp2_badge: '🏆 Core Feature',
+    sp2_title: '偽中国語 2.0 Code',
+    sp2_desc: "Chinese, Japanese & English speakers all understand it — but translators can't handle it. Viral on Xiaohongshu 2025",
+    sp2_flags: '🇨🇳✅ 🇯🇵✅ 🇺🇸✅ 🤖❌',
+    sp2_btn: 'Generate Code →',
+    sp3_title: 'Learn Chinese Through Play',
+    sp3_desc: 'Cat tax phrases, tone practice, internet slang, kanji codes — learning is never boring',
+    sp3_btn: 'Start Playing →',
+    sp3_tags: ['🐱 Cat Tax', '🎵 Tones', '漢 Kanji', '😂 Slang'],
+    proof: [
+      '🇯🇵 <strong>Japanese user</strong>: "我 finally understand 汉字! 偽中国語 is 天才!"',
+      '🇺🇸 <strong>TikTok refugee</strong>: "I came for TikTok, stayed for 中文. 猫税 paid!"',
+      '🇰🇷 <strong>Korean user</strong>: "한자 덕분에 중국어가 쉬워요! 我 love this site!"',
+      '🇨🇳 <strong>Chinese user</strong>: "Finally a tool to chat with foreign friends in 偽中国語!"',
+      "🇫🇷 <strong>French user</strong>: \"J'apprends le chinois ici. 汉字 is beautiful!\"",
+      '🇩🇪 <strong>German user</strong>: "Xiaohongshu brought me here. 我 love 中文!"',
+    ],
+    trans_title: '⚡ 3 Languages → 偽中国語 2.0 Generator',
+    trans_desc: 'Input Chinese, Japanese or Korean — auto-convert to a code all 3 nations can read',
+    trans_btn: 'Translate',
+    trans_placeholder: 'Enter text in any language...',
+    pinyin_title: '🔤 Pinyin Practice Mode',
+    pinyin_desc: 'Enter Chinese text to auto-generate pinyin annotations for pronunciation learning.',
+    pinyin_placeholder: 'Enter Chinese, e.g.: 你好，我想学中文！',
+    footer_brand: '说中文 · ShuoZhongWen | Learn Chinese from Any Language',
+    footer_api: 'Translation by MyMemory API · Pinyin generated locally',
+    logo_cn: "ShuoZhongWen",
+    logo_en: "Learn Chinese",
+    header_badge: "🔥 Global Chinese Fever",
+    tab_translate: "🔄 Translate & Learn",
+    tab_pinyin: "🔤 Pinyin Practice",
+    tab_fun_inner: "🎮 Fun",
+    tab_pseudo: "🔐 Pseudo Chinese 2.0",
+    trans_output_placeholder: "Translation will appear here",
+    trans_copy: "Copy",
+    trans_clear: "✕ Clear",
+    trans_show_pinyin: "🔤 Show Pinyin",
+    trans_vocab: "📖 Vocabulary",
+    trans_example: "💬 Examples",
+    trans_quick: "⚡ Quick Try",
+    learn_daily: "Phrase of Day",
+    learn_flash: "Flashcards",
+    learn_tone: "Tone Practice",
+    fun_idiom: "Idioms & Slang",
+    fun_pseudo: "🔐 Pseudo Chinese",
+    community_submit: "Post",
+    pseudo_tab_gen: "⚡ Generate",
+    pseudo_tab_decode: "🔍 Decode",
+    pseudo_tab_dialogs: "💬 Dialogs",
+    pseudo_tab_explain: "📖 How It Works",
+    pseudo_gen_btn: "🔐 Generate Pseudo Chinese 2.0",
+    pseudo_copy: "📋 Copy Code",
+    pseudo_share: "💬 Share",
+    pseudo_copy_share: "📋 Copy Share Text",
+    pseudo_try_gen: "⚡ Generate Now",
+    decode_legend_hanzi: "Kanji (shared nouns)",
+    decode_legend_en: "English (grammar)",
+    decode_legend_ja: "Japanese kana",
+    pseudo_share_title: "🌏 The Magic of Language",    footer_users: 'TikTok refugees have paid their cat tax here',
+  },
+  ja: {
+    tag_fire: '🔥 2025年小紅書で大バズり',
+    tag_tiktok: '🐱 TikTok難民専用',
+    tag_new: '✨ 世界初の三言語暗号ジェネレーター',
+    hero_line1: 'どんな言語も',
+    hero_line2: '中国語で読める',
+    hero_sub: '中文 · 日語 · 한국어 · English · Français · Deutsch<br>貼り付けるだけで即理解 · 三国人だけが読める<strong>偽中国語コード</strong>も生成',
+    stat1_label: 'TikTok難民が参加',
+    stat2_label: 'Duolingo中国語学習者急増',
+    stat3_label: '対応言語数',
+    stat4_label: '国の人が読めるコード',
+    sp1_title: '全言語を中国語に即翻訳',
+    sp1_desc: '12言語をワンクリックで翻訳。ピンイン・語彙解説付きで中国語学習のハードルゼロ',
+    sp1_btn: '今すぐ試す →',
+    sp2_badge: '🏆 コア機能',
+    sp2_title: '偽中国語2.0 暗号',
+    sp2_desc: '中日英三国人が全員理解できるのに翻訳機が翻訳できない不思議な言語 — 2025年小紅書で大バズり',
+    sp2_flags: '🇨🇳✅ 🇯🇵✅ 🇺🇸✅ 🤖❌',
+    sp2_btn: '暗号を生成 →',
+    sp3_title: '遊びながら中国語を学ぶ',
+    sp3_desc: '猫税フレーズ・声調練習・ネットスラング・漢字コード比較 — 学習は退屈じゃない',
+    sp3_btn: '遊んでみる →',
+    sp3_tags: ['🐱 猫税', '🎵 声調', '漢 漢字', '😂 スラング'],
+    proof: [
+      '🇯🇵 <strong>日本ユーザー</strong>：「我 finally understand 汉字! 偽中国語 is 天才!」',
+      '🇺🇸 <strong>TikTok難民</strong>：「I came for TikTok, stayed for 中文. 猫税 paid!」',
+      '🇰🇷 <strong>韓国ユーザー</strong>：「한자 덕분에 중국어가 쉬워요! 我 love this site!」',
+      '🇨🇳 <strong>中国ユーザー</strong>：「外国の友達と偽中国語でチャットできるツールがやっとできた！」',
+      "🇫🇷 <strong>フランスユーザー</strong>：「J'apprends le chinois ici. 汉字 is beautiful!」",
+      '🇩🇪 <strong>ドイツユーザー</strong>：「Xiaohongshu brought me here. 我 love 中文!」',
+    ],
+    trans_title: '⚡ 3言語 → 偽中国語2.0 ジェネレーター',
+    trans_desc: '中国語・日本語・韓国語を入力して、三国人が読める暗号に自動変換',
+    trans_btn: '翻訳',
+    trans_placeholder: 'どんな言語でも入力してください...',
+    pinyin_title: '🔤 ピンイン練習モード',
+    pinyin_desc: '中国語を入力すると、ピンイン付きの注音バージョンを自動生成します。',
+    pinyin_placeholder: '中国語を入力：例 你好，我想学中文！',
+    footer_brand: '说中文 · ShuoZhongWen | 全言語から中国語学習プラットフォーム',
+    footer_api: '翻訳：MyMemory API · ピンインはローカル生成',
+    logo_cn: "说中文",
+    logo_en: "ShuoZhongWen",
+    header_badge: "🔥 世界中国語ブーム",
+    tab_translate: "🔄 翻訳 & 学習",
+    tab_pinyin: "🔤 ピンイン練習",
+    tab_fun_inner: "🎮 楽しむ",
+    tab_pseudo: "🔐 偽中国語2.0",
+    trans_output_placeholder: "翻訳結果がここに表示されます",
+    trans_copy: "コピー",
+    trans_clear: "✕ クリア",
+    trans_show_pinyin: "🔤 ピンイン表示",
+    trans_vocab: "📖 語彙解説",
+    trans_example: "💬 例文",
+    trans_quick: "⚡ クイック体験",
+    learn_daily: "今日の一言",
+    learn_flash: "フラッシュカード",
+    learn_tone: "声調練習",
+    fun_idiom: "成語・スラング",
+    fun_pseudo: "🔐 偽中国語",
+    community_submit: "投稿",
+    pseudo_tab_gen: "⚡ 生成",
+    pseudo_tab_decode: "🔍 デコード",
+    pseudo_tab_dialogs: "💬 会話",
+    pseudo_tab_explain: "📖 解説",
+    pseudo_gen_btn: "🔐 偽中国語2.0を生成",
+    pseudo_copy: "📋 コードをコピー",
+    pseudo_share: "💬 シェア",
+    pseudo_copy_share: "📋 シェアテキストをコピー",
+    pseudo_try_gen: "⚡ 今すぐ生成",
+    decode_legend_hanzi: "漢字（中日共通名詞）",
+    decode_legend_en: "英語（文法/副詞）",
+    decode_legend_ja: "日本語仮名",
+    pseudo_share_title: "🌏 言語の魔法",    footer_users: '人のTikTok難民が猫税を納めました',
+  },
+  ko: {
+    tag_fire: '🔥 2025년 샤오홍수에서 대유행',
+    tag_tiktok: '🐱 TikTok 난민 전용',
+    tag_new: '✨ 세계 최초 3개국어 암호 생성기',
+    hero_line1: '어떤 언어든',
+    hero_line2: '중국어로 읽기',
+    hero_sub: '中文 · 日語 · 한국어 · English · Français · Deutsch<br>붙여넣기만 하면 바로 이해 · 세 나라 사람만 읽을 수 있는 <strong>偽中国語 암호</strong>도 생성',
+    stat1_label: 'TikTok 난민 입주',
+    stat2_label: 'Duolingo 중국어 학습자 급증',
+    stat3_label: '지원 언어 수',
+    stat4_label: '개국 사람이 읽을 수 있는 암호',
+    sp1_title: '전 언어 즉시 중국어 번역',
+    sp1_desc: '12개 언어 원클릭 번역. 자동 병음·어휘 설명으로 중국어 학습 장벽 제로',
+    sp1_btn: '지금 체험 →',
+    sp2_badge: '🏆 핵심 기능',
+    sp2_title: '偽中国語 2.0 암호',
+    sp2_desc: '중·일·영 세 나라 사람이 모두 이해하지만 번역기는 못 번역하는 신기한 언어 — 2025년 샤오홍수 대유행',
+    sp2_flags: '🇨🇳✅ 🇯🇵✅ 🇺🇸✅ 🤖❌',
+    sp2_btn: '암호 생성 →',
+    sp3_title: '놀면서 중국어 배우기',
+    sp3_desc: '고양이세 표현·성조 연습·인터넷 유행어·한자 암호 비교 — 학습은 지루하지 않아요',
+    sp3_btn: '시작하기 →',
+    sp3_tags: ['🐱 고양이세', '🎵 성조', '漢 한자', '😂 유행어'],
+    proof: [
+      '🇯🇵 <strong>일본 사용자</strong>: 「我 finally understand 汉字! 偽中国語 is 天才!」',
+      '🇺🇸 <strong>TikTok 난민</strong>: 「I came for TikTok, stayed for 中文. 猫税 paid!」',
+      '🇰🇷 <strong>한국 사용자</strong>: 「한자 덕분에 중국어가 쉬워요! 我 love this site!」',
+      '🇨🇳 <strong>중국 사용자</strong>: 「외국 친구와 偽中国語로 채팅할 수 있는 도구가 드디어 생겼어요!」',
+      "🇫🇷 <strong>프랑스 사용자</strong>: 「J'apprends le chinois ici. 汉字 is beautiful!」",
+      '🇩🇪 <strong>독일 사용자</strong>: 「Xiaohongshu brought me here. 我 love 中文!」',
+    ],
+    trans_title: '⚡ 3개 언어 → 偽中国語 2.0 생성기',
+    trans_desc: '중국어·일본어·한국어를 입력하면 세 나라 사람이 읽을 수 있는 암호로 자동 변환',
+    trans_btn: '번역',
+    trans_placeholder: '어떤 언어든 입력하세요...',
+    pinyin_title: '🔤 병음 연습 모드',
+    pinyin_desc: '중국어를 입력하면 병음이 달린 주음 버전을 자동 생성합니다.',
+    pinyin_placeholder: '중국어 입력: 예) 你好，我想学中文！',
+    footer_brand: '说中文 · ShuoZhongWen | 전 언어에서 중국어 학습 플랫폼',
+    footer_api: '번역: MyMemory API · 병음은 로컬 생성',
+    logo_cn: "说中文",
+    logo_en: "ShuoZhongWen",
+    header_badge: "🔥 글로벌 중국어 열풍",
+    tab_translate: "🔄 번역 & 학습",
+    tab_pinyin: "🔤 병음 연습",
+    tab_fun_inner: "🎮 재미",
+    tab_pseudo: "🔐 위중국어2.0",
+    trans_output_placeholder: "번역 결과가 여기에 표시됩니다",
+    trans_copy: "복사",
+    trans_clear: "✕ 지우기",
+    trans_show_pinyin: "🔤 병음 표시",
+    trans_vocab: "📖 어휘 설명",
+    trans_example: "💬 예문",
+    trans_quick: "⚡ 빠른 체험",
+    learn_daily: "오늘의 한마디",
+    learn_flash: "플래시카드",
+    learn_tone: "성조 연습",
+    fun_idiom: "성어 & 유행어",
+    fun_pseudo: "🔐 위중국어",
+    community_submit: "올리기",
+    pseudo_tab_gen: "⚡ 생성",
+    pseudo_tab_decode: "🔍 디코드",
+    pseudo_tab_dialogs: "💬 대화",
+    pseudo_tab_explain: "📖 해설",
+    pseudo_gen_btn: "🔐 위중국어2.0 생성",
+    pseudo_copy: "📋 암호 복사",
+    pseudo_share: "💬 공유",
+    pseudo_copy_share: "📋 공유 텍스트 복사",
+    pseudo_try_gen: "⚡ 지금 생성",
+    decode_legend_hanzi: "한자（공통 명사）",
+    decode_legend_en: "영어（문법/부사）",
+    decode_legend_ja: "일본어 가나",
+    pseudo_share_title: "🌏 언어의 마법",    footer_users: '명의 TikTok 난민이 고양이세를 납부했습니다',
+  },
+};
+
+const DAILY_PHRASES = [
+  { zh: '你好，世界！', py: 'Nǐ hǎo, shìjiè!', en: 'Hello, world!', note: '最经典的问候，也是每个程序员的第一行代码' },
+  { zh: '加油！', py: 'Jiā yóu!', en: 'You can do it!', note: '字面意思是"加汽油"，引申为"加把劲"，中国最万能的鼓励语' },
+  { zh: '随便', py: 'Suíbiàn', en: 'Whatever / Up to you', note: '中国人最常说的词，表示无所谓，但有时让人抓狂' },
+  { zh: '差不多', py: 'Chà bu duō', en: 'More or less / Close enough', note: '中国哲学精髓：不追求完美，差不多就行' },
+  { zh: '没关系', py: 'Méi guānxi', en: "It's okay / No problem", note: '比"对不起"更常用，化解尴尬的万能句' },
+  { zh: '吃了吗？', py: 'Chī le ma?', en: 'Have you eaten?', note: '中国人的问候方式，相当于英语的"How are you?"' },
+  { zh: '厉害了！', py: 'Lì hai le!', en: 'Impressive! / Amazing!', note: '2010年代网络流行语，现在已成日常用语' },
+  { zh: '走吧', py: 'Zǒu ba', en: "Let's go", note: '最简单的出发信号，配合点头效果更佳' },
+  { zh: '慢慢来', py: 'Màn màn lái', en: 'Take your time', note: '中国人的生活哲学，不急不躁' },
+  { zh: '没事', py: 'Méi shì', en: "Never mind / It's fine", note: '万能回应，可以接在任何道歉后面' },
+  { zh: '辛苦了', py: 'Xīnkǔ le', en: "You've worked hard", note: '对努力工作的人表示感谢和认可' },
+  { zh: '保重', py: 'Bǎo zhòng', en: 'Take care', note: '分别时的祝福，比"再见"更有温度' },
+  { zh: '随缘', py: 'Suí yuán', en: 'Go with the flow', note: '佛系生活态度，顺其自然' },
+  { zh: '内卷', py: 'Nèi juǎn', en: 'Involution / Rat race', note: '2020年最火网络词，指过度竞争内耗' },
+  { zh: '躺平', py: 'Tǎng píng', en: 'Lying flat / Opting out', note: '对内卷的反抗，选择不努力不竞争' },
+  { zh: '打工人', py: 'Dǎ gōng rén', en: 'Worker / Wage slave', note: '自嘲式称呼，带着苦中作乐的幽默' },
+  { zh: '摸鱼', py: 'Mō yú', en: 'Slacking off at work', note: '字面是"摸鱼"，引申为上班摸鱼偷懒' },
+  { zh: '破防了', py: 'Pò fáng le', en: 'My defenses are broken', note: '被感动或刺激到，情绪防线崩溃' },
+  { zh: '绝绝子', py: 'Jué jué zi', en: 'Absolutely amazing/terrible', note: '极端程度的表达，好坏都能用' },
+  { zh: '爷青回', py: 'Yé qīng huí', en: 'This brings back my youth', note: '看到童年回忆时的感叹' },
+  { zh: '整活', py: 'Zhěng huó', en: 'Doing something fun/crazy', note: '搞事情，整一些有趣或出格的事' },
+  { zh: '社恐', py: 'Shè kǒng', en: 'Social anxiety', note: '社交恐惧症的缩写，现在泛指不爱社交' },
+  { zh: '佛系', py: 'Fó xì', en: 'Chill / Laid-back', note: '像佛一样淡然，不争不抢不在乎' },
+  { zh: '摆烂', py: 'Bǎi làn', en: 'Let it rot / Give up', note: '放弃努力，任由事情变坏' },
+  { zh: '绝了', py: 'Jué le', en: 'Unbelievable / Incredible', note: '表示极度震惊或赞叹' },
+  { zh: '蚌埠住了', py: 'Bàng bù zhù le', en: "Can't hold it anymore", note: '谐音"绷不住了"，忍不住笑或崩溃' },
+  { zh: '嘴替', py: 'Zuǐ tì', en: 'Someone who speaks your mind', note: '替自己说出心里话的人' },
+  { zh: '显眼包', py: 'Xiǎn yǎn bāo', en: 'Attention seeker', note: '特别引人注目、爱出风头的人' },
+  { zh: '拿捏', py: 'Ná niē', en: 'Got it under control', note: '完全掌控、拿下某人或某事' },
+  { zh: '泼天富贵', py: 'Pō tiān fù guì', en: 'Sudden windfall / Unexpected fame', note: '突然降临的巨大财富或机遇' },
+];
+
+const IDIOM_DB = [
+  { word: '一石二鸟', py: 'yī shí èr niǎo', type: 'idiom', meaning: '一块石头打中两只鸟，比喻一个行动达到两个目的', en: 'Kill two birds with one stone', example: '这个方案一石二鸟，既省钱又省时间' },
+  { word: '半途而废', py: 'bàn tú ér fèi', type: 'idiom', meaning: '做事做到一半就放弃，比喻没有毅力', en: 'Give up halfway', example: '学语言不能半途而废，要坚持下去' },
+  { word: '马到成功', py: 'mǎ dào chéng gōng', type: 'idiom', meaning: '形容工作刚开始就取得成功', en: 'Immediate success', example: '祝你马到成功！' },
+  { word: '一帆风顺', py: 'yī fān fēng shùn', type: 'idiom', meaning: '比喻非常顺利，没有任何阻碍', en: 'Plain sailing', example: '祝你一帆风顺！' },
+  { word: '对牛弹琴', py: 'duì niú tán qín', type: 'idiom', meaning: '对不懂的人讲深奥的道理，白费力气', en: 'Cast pearls before swine', example: '跟他解释没用，简直是对牛弹琴' },
+  { word: '亡羊补牢', py: 'wáng yáng bǔ láo', type: 'idiom', meaning: '羊丢了再修羊圈，比喻出了问题后补救', en: 'Better late than never', example: '虽然迟了，但亡羊补牢，为时未晚' },
+  { word: '画蛇添足', py: 'huà shé tiān zú', type: 'idiom', meaning: '画蛇时多画了脚，比喻多此一举', en: 'Gild the lily / Overdo it', example: '这个功能是画蛇添足，删掉更好' },
+  { word: '守株待兔', py: 'shǒu zhū dài tù', type: 'idiom', meaning: '守着树桩等兔子，比喻不主动进取', en: 'Wait for a windfall', example: '不能守株待兔，要主动出击' },
+  { word: '塞翁失马', py: 'sài wēng shī mǎ', type: 'idiom', meaning: '坏事可能变好事，比喻祸福相依', en: 'A blessing in disguise', example: '塞翁失马，焉知非福' },
+  { word: '班门弄斧', py: 'bān mén nòng fǔ', type: 'idiom', meaning: '在鲁班门前耍斧子，比喻在行家面前卖弄', en: 'Show off in front of an expert', example: '在你面前说这个，真是班门弄斧' },
+  { word: '杯弓蛇影', py: 'bēi gōng shé yǐng', type: 'idiom', meaning: '把杯中弓的影子当成蛇，比喻疑神疑鬼', en: "See things that aren't there", example: '别杯弓蛇影了，没人针对你' },
+  { word: '狐假虎威', py: 'hú jiǎ hǔ wēi', type: 'idiom', meaning: '狐狸借老虎的威势，比喻借别人的权势吓人', en: 'Bully others by flaunting powerful connections', example: '他就是狐假虎威，背后没有真本事' },
+  { word: '内卷', py: 'nèi juǎn', type: 'slang', meaning: '过度竞争导致的内部消耗，大家都在努力但整体没有进步', en: 'Involution / Rat race', example: '现在职场太卷了，大家都在内卷' },
+  { word: '躺平', py: 'tǎng píng', type: 'slang', meaning: '放弃努力和竞争，顺其自然的生活态度', en: 'Lying flat / Opting out of the rat race', example: '卷不动了，我决定躺平' },
+  { word: '打工人', py: 'dǎ gōng rén', type: 'slang', meaning: '上班族的自嘲称呼，带有苦中作乐的幽默感', en: 'Worker / Wage slave (self-deprecating)', example: '打工人打工魂，打工都是人上人' },
+  { word: '摸鱼', py: 'mō yú', type: 'slang', meaning: '上班时间偷懒、做私事，不认真工作', en: 'Slacking off / Goldbricking', example: '今天摸了一天鱼，什么都没干' },
+  { word: '破防', py: 'pò fáng', type: 'slang', meaning: '情绪防线被突破，被感动或刺激到无法控制情绪', en: 'Emotionally overwhelmed / Defenses broken', example: '看到这个视频直接破防了，哭了' },
+  { word: '绝绝子', py: 'jué jué zi', type: 'slang', meaning: '表示极端程度，好的极好，坏的极坏', en: 'Absolutely amazing/terrible', example: '这个菜绝绝子，太好吃了！' },
+  { word: '爷青回', py: 'yé qīng huí', type: 'slang', meaning: '看到童年回忆时的感叹，"我的青春回来了"', en: 'This brings back my youth / Nostalgia hit', example: '听到这首歌，爷青回了' },
+  { word: '整活', py: 'zhěng huó', type: 'slang', meaning: '搞事情，做一些有趣、出格或创意的事', en: 'Doing something fun/crazy/creative', example: '这个博主太会整活了' },
+  { word: '社恐', py: 'shè kǒng', type: 'slang', meaning: '社交恐惧症，泛指不爱社交、在社交场合感到焦虑', en: 'Social anxiety / Socially awkward', example: '我是重度社恐，不想去聚会' },
+  { word: '佛系', py: 'fó xì', type: 'slang', meaning: '像佛一样淡然，不争不抢，随遇而安', en: 'Chill / Laid-back / Zen', example: '他很佛系，什么都无所谓' },
+  { word: '摆烂', py: 'bǎi làn', type: 'slang', meaning: '放弃努力，任由事情变坏，不再挣扎', en: 'Let it rot / Give up entirely', example: '期末考试摆烂了，什么都没复习' },
+  { word: '卷王', py: 'juǎn wáng', type: 'slang', meaning: '内卷最厉害的人，极度努力竞争的人', en: 'The most competitive person / Overachiever', example: '他是我们组的卷王，每天加班到12点' },
+  { word: 'yyds', py: 'yǒng yuǎn de shén', type: 'slang', meaning: '"永远的神"的缩写，表示某人或某物是最强的', en: 'GOAT / Forever the best', example: '这个歌手yyds，每首歌都好听' },
+  { word: '蚌埠住了', py: 'bàng bù zhù le', type: 'slang', meaning: '谐音"绷不住了"，忍不住笑或情绪崩溃', en: "Can't hold it anymore / Losing it", example: '看到这个表情包，蚌埠住了' },
+  { word: '嘴替', py: 'zuǐ tì', type: 'slang', meaning: '替自己说出心里话的人，说出了自己想说但没说的话', en: 'Someone who speaks your mind', example: '这个博主是我的嘴替，说的太对了' },
+  { word: '显眼包', py: 'xiǎn yǎn bāo', type: 'slang', meaning: '特别引人注目、爱出风头的人，带有调侃意味', en: 'Attention seeker / Show-off', example: '他就是个显眼包，走哪都要出风头' },
+  { word: '拿捏', py: 'ná niē', type: 'slang', meaning: '完全掌控、拿下，把某人或某事搞定', en: 'Got it under control / Nailed it', example: '这道题被我拿捏了' },
+  { word: '泼天富贵', py: 'pō tiān fù guì', type: 'slang', meaning: '突然降临的巨大财富或机遇，通常指意外爆红', en: 'Sudden windfall / Unexpected fame/fortune', example: '这次联名活动，泼天富贵来了' },
+  { word: '发疯文学', py: 'fā fēng wén xué', type: 'slang', meaning: '一种夸张、混乱、情绪化的网络写作风格', en: 'Unhinged writing style / Chaotic energy text', example: '她发了一段发疯文学，把大家都整笑了' },
+];
+
+const TONE_EXERCISES = [
+  { char: '妈', tone: 1, py: 'mā', meaning: 'mother' },
+  { char: '麻', tone: 2, py: 'má', meaning: 'hemp/numb' },
+  { char: '马', tone: 3, py: 'mǎ', meaning: 'horse' },
+  { char: '骂', tone: 4, py: 'mà', meaning: 'to scold' },
+  { char: '书', tone: 1, py: 'shū', meaning: 'book' },
+  { char: '熟', tone: 2, py: 'shú', meaning: 'cooked/familiar' },
+  { char: '鼠', tone: 3, py: 'shǔ', meaning: 'mouse/rat' },
+  { char: '树', tone: 4, py: 'shù', meaning: 'tree' },
+  { char: '飞', tone: 1, py: 'fēi', meaning: 'to fly' },
+  { char: '肥', tone: 2, py: 'féi', meaning: 'fat/fertile' },
+  { char: '匪', tone: 3, py: 'fěi', meaning: 'bandit' },
+  { char: '费', tone: 4, py: 'fèi', meaning: 'fee/to cost' },
+  { char: '汤', tone: 1, py: 'tāng', meaning: 'soup' },
+  { char: '糖', tone: 2, py: 'táng', meaning: 'sugar/candy' },
+  { char: '躺', tone: 3, py: 'tǎng', meaning: 'to lie down' },
+  { char: '烫', tone: 4, py: 'tàng', meaning: 'hot/to scald' },
+  { char: '猫', tone: 1, py: 'māo', meaning: 'cat' },
+  { char: '毛', tone: 2, py: 'máo', meaning: 'hair/fur' },
+  { char: '帽', tone: 4, py: 'mào', meaning: 'hat' },
+  { char: '好', tone: 3, py: 'hǎo', meaning: 'good' },
+];
+
+const QUICK_EXAMPLES = [
+  { lang: 'zh', text: '我今天很开心，因为我的猫很可爱', label: '😊 中文·心情' },
+  { lang: 'zh', text: '你喜欢中国文化吗？我觉得汉字很美', label: '🎌 中文·文化' },
+  { lang: 'zh', text: '谢谢你，你是我的好朋友', label: '🤝 中文·感谢' },
+  { lang: 'ja', text: '今日はとても嬉しいです、猫がかわいいから', label: '🇯🇵 日語·心情' },
+  { lang: 'ja', text: 'あなたは中国文化が好きですか？漢字は美しいと思います', label: '🇯🇵 日語·文化' },
+  { lang: 'ja', text: '私は日本から来ました、中国語を勉強しています', label: '🇯🇵 日語·自我介绍' },
+  { lang: 'ko', text: '오늘은 정말 행복해요, 고양이가 너무 귀여워서', label: '🇰🇷 韩语·心情' },
+  { lang: 'ko', text: '저는 중국 문화를 좋아해요, 한자가 정말 아름다워요', label: '🇰🇷 韩语·文化' },
+  { lang: 'ko', text: '안녕하세요! 저는 한국에서 왔어요', label: '🇰🇷 韩语·问候' },
+  { lang: 'fr', text: "J'apprends le chinois depuis TikTok, c'est très intéressant!", label: '🇫🇷 法语·学习' },
+  { lang: 'fr', text: 'Je suis très heureux parce que mon chat est mignon', label: '🇫🇷 法语·心情' },
+  { lang: 'de', text: 'Ich lerne Chinesisch, weil ich Xiaohongshu liebe', label: '🇩🇪 德语·学习' },
+  { lang: 'de', text: 'Ich bin sehr glücklich, meine Katze ist so süß', label: '🇩🇪 德语·心情' },
+  { lang: 'es', text: 'Estoy aprendiendo chino, es muy interesante', label: '🇪🇸 西语·学习' },
+  { lang: 'es', text: 'Hoy estoy muy feliz porque mi gato es adorable', label: '🇪🇸 西语·心情' },
+];
+
+const PSEUDO_DIALOGS = [
+  {
+    scene: '🐱 缴猫税 — TikTok难民入境仪式',
+    messages: [
+      { lang: '🇺🇸 TikTok难民', text: '我 am now at 小红书. 我 have 猫. This is my 猫税!', meaning: '我现在在小红书了，我有猫，这是我的猫税！' },
+      { lang: '🇨🇳 中国用户', text: "君\u2019s 猫 is very 可爱! 欢迎 to 小红书!", meaning: '你的猫很可爱！欢迎来小红书！' },
+      { lang: '🇯🇵 日本用户', text: '我 also have 猫. 彼 is my 家人. 猫税 is very 重要!', meaning: '我也有猫，它是我的家人，猫税很重要！' },
+    ]
+  },
+  {
+    scene: '💬 原始发现 — @安处岛的天才提案',
+    messages: [
+      { lang: '🇯🇵 @安処島', text: '我 発見 many 名詞 in 中国語 and 日本語 are 同一, but 文法 are 完全 different. So my 提案 is 借用 副詞 from 英語.', meaning: '我发现中日两语很多名词相同，但语法完全不同。所以我的提案是从英语借用副词。' },
+      { lang: '🌐 网友回复', text: "君\u2019s 提案 is very 有趣! 我 am 尝试 this 方式. 偽中国語2.0 天才!", meaning: '你的提案非常有趣！我在尝试这种方式。伪中国语2.0，天才！' },
+      { lang: '🇨🇳 中国网友', text: 'Maybe 彼 本当に 天才? 出院! 这 is 本世纪 大発見!', meaning: '也许他真的是天才？太厉害了！这是本世纪大发现！' },
+    ]
+  },
+  {
+    scene: '🍜 聊美食',
+    messages: [
+      { lang: '🇯🇵 日本用户', text: '今日 我 eat 拉麺. very 美味. 君 like 中国料理?', meaning: '今天我吃了拉面，很好吃。你喜欢中国料理吗？' },
+      { lang: '🇨🇳 中国用户', text: '我 love 日本料理! 寿司 and 拉面 are very 好吃!', meaning: '我爱日本料理！寿司和拉面都很好吃！' },
+      { lang: '🇺🇸 美国用户', text: 'I also love 中国 美食. 火锅 is my 最爱!', meaning: '我也爱中国美食，火锅是我的最爱！' },
+    ]
+  },
+  {
+    scene: '📱 聊语言学习',
+    messages: [
+      { lang: '🇺🇸 学习者', text: '我 am 学习 中文. 汉字 is very 难, but also very 美. 君 can help 我?', meaning: '我在学中文，汉字很难但也很美，你能帮我吗？' },
+      { lang: '🇨🇳 中国用户', text: '当然! 我 will help 君. 汉字 is not so 难. 我们 一起 学习!', meaning: '当然！我会帮你，汉字没那么难，我们一起学习！' },
+      { lang: '🇯🇵 日本用户', text: '我 also 学习 中文. 汉字 is 同一 in 日本語. So 我们 have 优势!', meaning: '我也在学中文，汉字在日语里是一样的，所以我们有优势！' },
+    ]
+  }
+];
+
+const EXPLAINER_DATA = [
+  {
+    version: '1.0 版 · 2009年',
+    title: '偽中国語 原版',
+    desc: '日语去掉平假名/片假名，只留汉字。中国人能猜懂，但语句不通顺，有种"机器人幽默感"。',
+    orig: '私は今日学校に行きました',
+    pseudo: '私 今日 学校 行',
+    note: '中国人能猜出：我今天去学校了'
+  },
+  {
+    version: '2.0 版 · 2025年爆火',
+    title: '偽中国語 2.0',
+    desc: '汉字名词（中日共通）+ 英语副词/语法词。三国人用初中英语水平就能互相看懂。',
+    orig: '我今天很开心，因为我的猫很可爱',
+    pseudo: "我 today is very 开心, because 我\u2019s 猫 is very 可爱",
+    note: '中国人✅ 日本人✅ 英语用户✅ 翻译器❌'
+  },
+  {
+    version: '核心机制',
+    title: '为什么有效？',
+    desc: '中日两国共用约2000个汉字，名词含义高度重叠。英语作为全球通用语补充语法，三套系统互补。',
+    orig: '汉字覆盖率',
+    pseudo: '日语中汉字占40%，中日共通名词超过1500个',
+    note: '文化同源 + 英语桥接 = 三国互通'
+  },
+  {
+    version: '社会背景',
+    title: '为什么2025年爆火？',
+    desc: 'TikTok难民涌入小红书，中美日三国网友突然需要跨语言交流，偽中国語2.0恰好提供了解决方案。',
+    orig: '2025年1月',
+    pseudo: 'TikTok难民 → 小红书 → 多邻国中文学习+216%',
+    note: '语言需求 × 文化热潮 = 病毒式传播'
+  }
+];
+
+
+// ===== DATA =====
+
+
+// ===== STATE =====
+let options = { pinyin: true, vocab: true, example: false };
+let currentResult = '';
+let targetLang = 'zh';
+let isSwapped = false;
+
+// ===== INIT =====
+function init() {
+  renderPage();
+  renderExamples();
+  renderFunGrid();
+  animateUserCount();
+}
+
+function animateUserCount() {
+  let n = 12847;
+  setInterval(() => {
+    n += Math.floor(Math.random() * 3);
+    const fmt = n.toLocaleString();
+    const el1 = document.getElementById('statUsers');
+    const el2 = document.getElementById('userCount');
+    if (el1) el1.textContent = fmt;
+    if (el2) el2.textContent = fmt;
+  }, 3000);
+  // 无缝滚动：复制一份proof内容
+  const scroll = document.getElementById('proofScroll');
+  if (scroll) {
+    scroll.innerHTML += scroll.innerHTML;
+  }
+}
+
+// ===== TAB SWITCH =====
+function switchTab(tab) {
+  if (tab === 'pseudo' && !window._pseudoInited) { window._pseudoInited = true; setTimeout(initPseudo, 0); }
+  ['translate', 'pinyin', 'fun', 'pseudo'].forEach(tab_id => {
+    document.getElementById('tab-' + tab_id).style.display = tab_id === tab ? 'block' : 'none';
+  });
+  document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+    btn.classList.toggle('active', ['translate', 'pinyin', 'fun', 'pseudo'][i] === tab);
+  });
+}
+
+// ===== INPUT HANDLING =====
+function onInput() {
+  const text = document.getElementById('inputText').value;
+  document.getElementById('charCount').textContent = text.length + ' / 500';
+}
+
+function onSourceLangChange() {
+  // 如果选了中文作为源语言，目标自动切换为英语
+  const src = document.getElementById('sourceLang').value;
+  if (src === 'zh') {
+    targetLang = 'en';
+    document.getElementById('outputLangFlag').textContent = '🇺🇸';
+    document.getElementById('outputLangName').textContent = '英语';
+  } else {
+    targetLang = 'zh';
+    document.getElementById('outputLangFlag').textContent = '🇨🇳';
+    document.getElementById('outputLangName').textContent = '中文';
+  }
+}
+
+function clearInput() {
+  document.getElementById('inputText').value = '';
+  document.getElementById('charCount').textContent = '0 / 500';
+  document.getElementById('outputText').innerHTML = '<div class="output-placeholder"><span>✨</span><div>翻译结果将显示在这里</div></div>';
+  document.getElementById('pinyinBlock').classList.remove('show');
+  document.getElementById('vocabBlock').classList.remove('show');
+  currentResult = '';
+}
+
+function swapLangs() {
+  const srcSel = document.getElementById('sourceLang');
+  const inputEl = document.getElementById('inputText');
+  const outputEl = document.getElementById('outputText');
+
+  if (currentResult && currentResult !== '') {
+    // 把翻译结果放回输入框
+    inputEl.value = currentResult;
+    onInput();
+    // 切换语言
+    if (srcSel.value === 'zh' || srcSel.value === 'auto') {
+      srcSel.value = 'en';
+    } else {
+      srcSel.value = 'zh';
+    }
+    onSourceLangChange();
+    outputEl.innerHTML = '<div class="output-placeholder"><span>✨</span><div>翻译结果将显示在这里</div></div>';
+    currentResult = '';
+  }
+}
+
+// ===== OPTIONS =====
+function toggleOption(key) {
+  options[key] = !options[key];
+  const chip = document.getElementById('chip-' + key);
+  chip.classList.toggle('active', options[key]);
+}
+
+// ===== TRANSLATE =====
+async function doTranslate() {
+  const text = document.getElementById('inputText').value.trim();
+  if (!text) { showToast('请先输入要翻译的文字'); return; }
+
+  const btn = document.getElementById('translateBtn');
+  const btnText = document.getElementById('btnText');
+  btn.disabled = true;
+  btnText.innerHTML = '<span class="loading-dots"><span></span><span></span><span></span></span>';
+
+  try {
+    const srcLang = document.getElementById('sourceLang').value;
+    const from = srcLang === 'auto' ? 'autodetect' : srcLang;
+    const to = targetLang;
+
+    // MyMemory 免费翻译 API
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`;
+    const resp = await fetch(url);
+    const data = await resp.json();
+
+    if (data.responseStatus === 200) {
+      currentResult = data.responseData.translatedText;
+      document.getElementById('outputText').textContent = currentResult;
+
+      // 拼音
+      if (options.pinyin && to === 'zh') {
+        showPinyin(currentResult);
+      } else {
+        document.getElementById('pinyinBlock').classList.remove('show');
+      }
+
+      // 词汇
+      if (options.vocab && to === 'zh') {
+        showVocab(currentResult);
+      } else {
+        document.getElementById('vocabBlock').classList.remove('show');
+      }
+
+    } else {
+      document.getElementById('outputText').textContent = '翻译失败，请稍后重试';
+      showToast('翻译服务暂时不可用，请检查网络');
+    }
+  } catch (e) {
+    document.getElementById('outputText').textContent = '网络错误，请检查连接后重试';
+    showToast('网络连接失败');
+  } finally {
+    btn.disabled = false;
+    btnText.textContent = '翻译';
+  }
+}
+
+// ===== PINYIN =====
+function showPinyin(text) {
+  const container = document.getElementById('pinyinChars');
+  container.innerHTML = '';
+  let hasAny = false;
+
+  for (const ch of text) {
+    if (/[\u4e00-\u9fff]/.test(ch)) {
+      const py = PINYIN_MAP[ch] || '?';
+      const unit = document.createElement('div');
+      unit.className = 'pinyin-unit';
+      unit.innerHTML = `<span class="pinyin-py">${py}</span><span class="pinyin-ch">${ch}</span>`;
+      container.appendChild(unit);
+      hasAny = true;
+    } else if (ch !== ' ' && ch !== '\n') {
+      const unit = document.createElement('div');
+      unit.className = 'pinyin-unit';
+      unit.innerHTML = `<span class="pinyin-py">&nbsp;</span><span class="pinyin-ch">${ch}</span>`;
+      container.appendChild(unit);
+    }
+  }
+
+  document.getElementById('pinyinBlock').classList.toggle('show', hasAny);
+}
+
+function generatePinyin() {
+  const text = document.getElementById('pinyinInput').value;
+  const out = document.getElementById('pinyinOutput');
+  if (!text.trim()) { out.innerHTML = ''; return; }
+
+  let html = '<div class="pinyin-chars" style="flex-wrap:wrap;gap:8px;display:flex">';
+  for (const ch of text) {
+    if (/[\u4e00-\u9fff]/.test(ch)) {
+      const py = PINYIN_MAP[ch] || '?';
+      html += `<div class="pinyin-unit"><span class="pinyin-py">${py}</span><span class="pinyin-ch">${ch}</span></div>`;
+    } else if (ch === ' ') {
+      html += '<div style="width:12px"></div>';
+    } else if (ch === '\n') {
+      html += '</div><div class="pinyin-chars" style="flex-wrap:wrap;gap:8px;display:flex;margin-top:12px">';
+    } else {
+      html += `<div class="pinyin-unit"><span class="pinyin-py">&nbsp;</span><span class="pinyin-ch">${ch}</span></div>`;
+    }
+  }
+  html += '</div>';
+  out.innerHTML = html;
+}
+
+// ===== VOCAB =====
+function showVocab(text) {
+  const list = document.getElementById('vocabList');
+  list.innerHTML = '';
+  let found = 0;
+
+  for (const [word, info] of Object.entries(VOCAB_DB)) {
+    if (text.includes(word) && found < 4) {
+      const item = document.createElement('div');
+      item.className = 'vocab-item';
+      item.innerHTML = `
+        <div class="vocab-word">${word}</div>
+        <div class="vocab-info">
+          <div class="vocab-pinyin">${info.pinyin}</div>
+          <div class="vocab-meaning">${info.meaning}</div>
+        </div>`;
+      list.appendChild(item);
+      found++;
+    }
+  }
+
+  document.getElementById('vocabBlock').classList.toggle('show', found > 0);
+}
+
+// ===== COPY =====
+function copyResult() {
+  if (!currentResult) return;
+  navigator.clipboard.writeText(currentResult).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '已复制 ✓';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = '复制';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+
+// ===== EXAMPLES =====
+function renderExamples() {
+  const grid = document.getElementById('examplesGrid');
+  EXAMPLES.forEach(ex => {
+    const chip = document.createElement('div');
+    chip.className = 'example-chip';
+    chip.innerHTML = `<div class="ex-lang">${ex.flag} ${ex.label}</div><div class="ex-text">${ex.text}</div>`;
+    chip.onclick = () => {
+      document.getElementById('inputText').value = ex.text;
+      document.getElementById('sourceLang').value = ex.lang;
+      onInput();
+      onSourceLangChange();
+      showToast('已填入示例，点击翻译按钮');
+    };
+    grid.appendChild(chip);
+  });
+}
+
+// ===== FUN GRID =====
+function renderFunGrid() {
+  const grid = document.getElementById('funGrid');
+  FUN_MODES.forEach(mode => {
+    const card = document.createElement('div');
+    card.className = 'fun-card';
+    card.innerHTML = `<span class="fc-emoji">${mode.emoji}</span><div class="fc-title">${mode.title}</div><div class="fc-sub">${mode.sub.replace('\n', '<br>')}</div>`;
+    card.onclick = () => loadFunMode(mode.id);
+    grid.appendChild(card);
+  });
+}
+
+function loadFunMode(id) {
+  const content = document.getElementById('funContent');
+  const modes = {
+    cattax: renderCatTax,
+    quiz:   renderQuiz,
+    phrase: renderPhrases,
+    kanji:  renderKanji,
+    tone:   renderTones,
+    meme:   renderMemes
+  };
+  if (modes[id]) modes[id](content);
+}
+
+function renderCatTax(el) {
+  el.innerHTML = `
+    <div class="section-title">🐱 缴猫税 — 融入小红书的第一步</div>
+    <p style="color:var(--gray);font-size:14px;line-height:1.8;margin-bottom:16px">
+      当TikTok难民涌入小红书时，中国网友要求外国人"缴猫税"——发一张猫咪照片作为入场费。<br>
+      学会这些句子，你就能和中国网友愉快互动！
+    </p>
+    <div style="display:grid;gap:10px">
+      ${[
+        ['我的猫叫小白', 'Wǒ de māo jiào Xiǎobái', 'My cat is called Xiaobai'],
+        ['猫咪好可爱！', "Māomī hǎo kě'ài!", 'The cat is so cute!'],
+        ['这是我的猫税', 'Zhè shì wǒ de māo shuì', 'This is my cat tax'],
+        ['我爱猫！', 'Wǒ ài māo!', 'I love cats!'],
+        ['猫猫抱抱', 'Māomāo bào bào', 'Cat hugs']
+      ].map(([zh, py, en]) => `
+        <div style="background:var(--light-pink);border:1px solid var(--border);border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:16px">
+          <div style="font-size:24px">🐱</div>
+          <div style="flex:1">
+            <div style="font-size:18px;font-weight:700;color:var(--text)">${zh}</div>
+            <div style="font-size:13px;color:var(--red);margin:2px 0">${py}</div>
+            <div style="font-size:12px;color:var(--gray)">${en}</div>
+          </div>
+          <button onclick="speakChinese('${zh}')" style="background:var(--red);color:white;border:none;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:13px">🔊 听</button>
+        </div>`).join('')}
+    </div>`;
+}
+
+function renderQuiz(el) {
+  const questions = [
+    { q: '你好 (nǐ hǎo) 是什么意思？', opts: ['再见', '你好', '谢谢', '对不起'], ans: 1 },
+    { q: '猫 (māo) 是什么动物？', opts: ['狗', '鱼', '猫', '鸟'], ans: 2 },
+    { q: '谢谢 (xiè xiè) 表示什么？', opts: ['你好', '再见', '对不起', '谢谢'], ans: 3 },
+    { q: '中文里"爱"(ài) 是什么意思？', opts: ['恨', '爱', '怕', '笑'], ans: 1 },
+    { q: '"吃饭了吗" 是什么意思？', opts: ['你睡了吗', '你吃饭了吗', '你好吗', '你在哪'], ans: 1 }
+  ];
+  let current = 0, score = 0;
+
+  function render() {
+    if (current >= questions.length) {
+      el.innerHTML = `
+        <div style="text-align:center;padding:40px 20px">
+          <div style="font-size:48px;margin-bottom:16px">${score >= 4 ? '🏆' : score >= 2 ? '👍' : '📚'}</div>
+          <div style="font-size:24px;font-weight:700;margin-bottom:8px">得分：${score} / ${questions.length}</div>
+          <div style="color:var(--gray);margin-bottom:24px">${score >= 4 ? '太棒了！你的中文很厉害！' : score >= 2 ? '不错！继续加油！' : '继续学习，你会进步的！'}</div>
+          <button onclick="loadFunMode('quiz')" style="background:var(--red);color:white;border:none;border-radius:12px;padding:12px 28px;font-size:15px;font-weight:700;cursor:pointer">再来一次</button>
+        </div>`;
+      return;
+    }
+    const q = questions[current];
+    el.innerHTML = `
+      <div class="section-title">🎯 中文测验 (${current + 1}/${questions.length})</div>
+      <div style="background:var(--light-pink);border-radius:14px;padding:20px;margin-bottom:16px;font-size:17px;font-weight:600;line-height:1.6">${q.q}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        ${q.opts.map((opt, i) => `
+          <button onclick="checkAnswer(${i}, ${q.ans})" style="padding:14px;border:2px solid var(--border);border-radius:12px;background:white;font-size:15px;cursor:pointer;transition:all 0.2s;font-family:inherit" onmouseover="this.style.borderColor='var(--pink)'" onmouseout="this.style.borderColor='var(--border)'">${opt}</button>
+        `).join('')}
+      </div>`;
+
+    window.checkAnswer = (i, ans) => {
+      const btns = el.querySelectorAll('button');
+      btns.forEach((b, idx) => {
+        b.disabled = true;
+        if (idx === ans) b.style.background = '#d4edda', b.style.borderColor = '#28a745';
+        else if (idx === i && i !== ans) b.style.background = '#f8d7da', b.style.borderColor = '#dc3545';
+      });
+      if (i === ans) score++;
+      setTimeout(() => { current++; render(); }, 1200);
+    };
+  }
+  render();
+}
+
+function renderPhrases(el) {
+  const phrases = [
+    ['你好', 'nǐ hǎo', '你好', 'こんにちは / Hello / 안녕하세요'],
+    ['谢谢', 'xiè xiè', '谢谢', 'ありがとう / Thank you / 감사합니다'],
+    ['对不起', 'duì bu qǐ', '对不起', 'ごめんなさい / Sorry / 미안합니다'],
+    ['再见', 'zài jiàn', '再见', 'さようなら / Goodbye / 안녕히 가세요'],
+    ['我不懂', 'wǒ bù dǒng', '我不懂', "わかりません / I don't understand"],
+    ['多少钱', 'duō shǎo qián', '多少钱？', 'いくらですか / How much?'],
+    ['好吃', 'hǎo chī', '好吃！', 'おいしい / Delicious!'],
+    ['厉害', 'lì hài', '厉害！', 'すごい / Amazing!'],
+    ['没关系', 'méi guān xi', '没关系', "大丈夫 / It's okay"],
+    ['加油', 'jiā yóu', '加油！', 'がんばれ / You can do it!']
+  ];
+  el.innerHTML = `
+    <div class="section-title">💬 10句必备中文</div>
+    <div style="display:grid;gap:8px">
+      ${phrases.map(([zh, py, display, trans]) => `
+        <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--light-pink);border-radius:10px;border:1px solid var(--border)">
+          <div style="min-width:80px">
+            <div style="font-size:18px;font-weight:700;color:var(--text)">${display}</div>
+            <div style="font-size:12px;color:var(--red)">${py}</div>
+          </div>
+          <div style="flex:1;font-size:12px;color:var(--gray);line-height:1.5">${trans}</div>
+          <button onclick="speakChinese('${zh}')" style="background:var(--red);color:white;border:none;border-radius:8px;padding:5px 10px;cursor:pointer;font-size:12px;white-space:nowrap">🔊</button>
+        </div>`).join('')}
+    </div>`;
+}
+
+function renderKanji(el) {
+  const pairs = [
+    { zh: '中国', ja: '中国', same: true, note: '完全相同！意思也一样' },
+    { zh: '日本', ja: '日本', same: true, note: '完全相同！' },
+    { zh: '学生', ja: '学生', same: true, note: '完全相同！' },
+    { zh: '电话', ja: '電話', same: false, note: '意思相同，但日语用繁体' },
+    { zh: '图书馆', ja: '図書館', same: false, note: '意思相同，字形略有不同' },
+    { zh: '新闻', ja: '新聞', same: false, note: '意思相同，日语用"聞"' },
+    { zh: '手机', ja: '携帯電話', same: false, note: '意思相同，但日语更长' },
+    { zh: '爱人', ja: '愛人', same: true, note: '⚠️ 陷阱！中文=配偶，日语=情人' }
+  ];
+  el.innerHTML = `
+    <div class="section-title">漢 汉字密码 — 中日汉字对比</div>
+    <p style="color:var(--gray);font-size:13px;margin-bottom:16px;line-height:1.7">中日两国共用汉字，很多字形和意思相同，但也有"陷阱"！</p>
+    <div style="display:grid;gap:8px">
+      ${pairs.map(p => `
+        <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:${p.same ? '#f0fff4' : '#fff8f0'};border-radius:10px;border:1px solid ${p.same ? '#b7ebc8' : 'var(--border)'}">
+          <div style="font-size:20px;font-weight:700;color:var(--red);min-width:60px">${p.zh}</div>
+          <div style="font-size:18px;color:#666;min-width:20px">↔</div>
+          <div style="font-size:20px;font-weight:700;color:#0066cc;min-width:60px">${p.ja}</div>
+          <div style="flex:1;font-size:12px;color:var(--gray)">${p.note}</div>
+          <div style="font-size:16px">${p.same ? '✅' : '⚠️'}</div>
+        </div>`).join('')}
+    </div>`;
+}
+
+function renderTones(el) {
+  el.innerHTML = `
+    <div class="section-title">🎵 四声入门 — 声调是中文的灵魂</div>
+    <p style="color:var(--gray);font-size:13px;margin-bottom:16px;line-height:1.7">中文有4个声调，同一个音不同声调意思完全不同！</p>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px">
+      ${[
+        { tone: '第一声 ā', desc: '高平调，像唱歌', ex: '妈 (māo)', color: '#ff2442' },
+        { tone: '第二声 á', desc: '上升调，像问句', ex: '麻 (má)', color: '#ff6b8a' },
+        { tone: '第三声 ǎ', desc: '先降后升', ex: '马 (mǎ)', color: '#ffb347' },
+        { tone: '第四声 à', desc: '急降调，像命令', ex: '骂 (mà)', color: '#888' }
+      ].map(t => `
+        <div style="background:var(--light-pink);border-radius:12px;padding:16px;border:1px solid var(--border);text-align:center">
+          <div style="font-size:22px;font-weight:800;color:${t.color};margin-bottom:6px">${t.tone}</div>
+          <div style="font-size:12px;color:var(--gray);margin-bottom:8px">${t.desc}</div>
+          <div style="font-size:15px;font-weight:600">${t.ex}</div>
+        </div>`).join('')}
+    </div>
+    <div style="background:#fff8f0;border-radius:12px;padding:16px;border:1px solid var(--border)">
+      <div style="font-weight:700;margin-bottom:8px">🎯 经典例子：mā / má / mǎ / mà</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center">
+        ${[['妈','māo','妈妈'],['麻','má','麻烦'],['马','mǎ','马匹'],['骂','mà','骂人']].map(([ch,py,ex]) => `
+          <div>
+            <div style="font-size:28px;font-weight:700;color:var(--red)">${ch}</div>
+            <div style="font-size:12px;color:var(--pink)">${py}</div>
+            <div style="font-size:11px;color:var(--gray)">${ex}</div>
+          </div>`).join('')}
+      </div>
+    </div>`;
+}
+
+function renderMemes(el) {
+  const memes = [
+    { word: '绝绝子', py: 'jué jué zi', meaning: '极好/极坏，表示极端程度', en: 'Absolutely amazing/terrible' },
+    { word: '躺平', py: 'tǎng píng', meaning: '放弃努力，顺其自然', en: 'Lying flat / giving up' },
+    { word: '内卷', py: 'nèi juǎn', meaning: '过度竞争，内部消耗', en: 'Involution / rat race' },
+    { word: '打工人', py: 'dǎ gōng rén', meaning: '上班族，自嘲打工的人', en: 'Worker / wage slave (self-deprecating)' },
+    { word: '摆烂', py: 'bǎi làn', meaning: '放弃努力，任由事情变坏', en: 'Let it rot / give up' },
+    { word: '破防了', py: 'pò fáng le', meaning: '被感动/刺激到，防线崩溃', en: "My defenses are broken / I'm moved" },
+    { word: '整活', py: 'zhěng huó', meaning: '搞事情，整一些有趣的事', en: 'Doing something fun/crazy' },
+    { word: '爷青回', py: 'yé qīng huí', meaning: '让我想起了年轻时代', en: 'This brings back my youth' }
+  ];
+  el.innerHTML = `
+    <div class="section-title">😂 中文网络梗 — 看懂中国互联网</div>
+    <div style="display:grid;gap:8px">
+      ${memes.map(m => `
+        <div style="padding:12px 14px;background:var(--light-pink);border-radius:10px;border:1px solid var(--border)">
+          <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:4px">
+            <span style="font-size:18px;font-weight:700;color:var(--red)">${m.word}</span>
+            <span style="font-size:12px;color:var(--pink)">${m.py}</span>
+          </div>
+          <div style="font-size:13px;color:var(--text);margin-bottom:2px">${m.meaning}</div>
+          <div style="font-size:12px;color:var(--gray)">${m.en}</div>
+        </div>`).join('')}
+    </div>`;
+}
+
+// ===== TTS =====
+function speakChinese(text) {
+  if ('speechSynthesis' in window) {
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang = 'zh-CN';
+    utt.rate = 0.85;
+    speechSynthesis.speak(utt);
+  } else {
+    showToast('您的浏览器不支持语音播放');
+  }
+}
+
+// ===== TOAST =====
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ===== PSEUDO CHINESE 2.0 MODULE =====
+// ===== 数据 =====
+const PSEUDO_ENGINE = {
+  funcWords: {
+    '我们': '我们', '你们': '君们', '他们': '彼们',
+    '不是': 'is not', '没有': 'have no', '什么时候': 'when',
+    '为什么': 'why', '怎么': 'how', '多少': 'how many',
+    '非常': 'very very', '真的': 'really', '已经': 'already',
+    '只是': 'just', '可能': 'maybe', '应该': 'should',
+    '必须': 'must', '可以': 'can', '想要': 'want',
+    '但是': 'but', '所以': 'so', '因为': 'because',
+    '如果': 'if', '虽然': 'although', '而且': 'and also',
+    '今天': '今日', '明天': '明日', '昨天': '昨日',
+    '早上': '朝', '晚上': '夜', '中午': '昼',
+    '什么': 'what', '哪里': 'where', '谁': 'who',
+    '我': '我', '你': '君', '他': '彼', '她': '彼女',
+    '是': 'is', '有': 'have', '在': 'at',
+    '去': 'go to', '来': 'come', '想': 'want to',
+    '喜欢': 'like', '爱': 'love', '恨': 'hate',
+    '知道': 'know', '觉得': 'feel', '认为': 'think',
+    '说': 'say', '问': 'ask', '看': 'see', '听': 'hear',
+    '吃': 'eat', '喝': 'drink', '做': 'do',
+    '买': 'buy', '学': 'study', '玩': 'play',
+    '很': 'very', '太': 'too', '也': 'also',
+    '都': 'all', '还': 'still', '只': 'only',
+    '就': 'just', '又': 'again', '不': 'not',
+    '没': 'not', '别': "don't", '会': 'will',
+    '要': 'will', '和': 'and', '或者': 'or',
+    '现在': 'now', '以前': 'before', '以后': 'after',
+    '吗': '?', '呢': '~', '啊': '!', '哦': 'oh',
+    '嗯': 'hmm', '了': '', '着': '', '过': '',
+    '从': 'from', '到': 'to', '对': 'to',
+    '给': 'for', '用': 'with', '比': 'than', '跟': 'with',
+  },
+  keepAsHanzi: new Set([
+    '猫','狗','鱼','鸟','花','树','山','水','火','风',
+    '家','学校','公司','医院','餐厅','咖啡','茶','饭','面',
+    '中国','日本','美国','韩国','北京','东京','上海',
+    '朋友','家人','妈妈','爸爸','老师','学生',
+    '手机','电脑','书','音乐','电影','游戏',
+    '工作','学习','旅行','美食','文化','语言',
+    '心','梦','时间','生活','世界','未来',
+    '猫税','小红书','汉字','拼音','文字','名词',
+    '提案','密码','天才','发现',
+  ]),
+  generate(text) {
+    let result = text;
+    const annotations = [];
+    const entries = Object.entries(this.funcWords)
+      .sort((a, b) => b[0].length - a[0].length);
+    for (const [cn, en] of entries) {
+      if (result.includes(cn) && !this.keepAsHanzi.has(cn)) {
+        if (en === '') {
+          result = result.split(cn).join('');
+        } else {
+          result = result.split(cn).join(` ${en} `);
+          if (en !== cn && /[a-zA-Z]/.test(en)) {
+            annotations.push({ cn, en });
+          }
+        }
+      }
+    }
+    result = result.replace(/\s+/g, ' ').trim();
+    result = result.replace(/\s+([?!~。，、。])/g, '$1');
+    return { text: result, annotations };
+  },
+  decode(text) {
+    const tokens = text.split(/(\s+)/).filter(t => t.trim());
+    return tokens.map(token => {
+      const hasChinese = /[\u4e00-\u9fff]/.test(token);
+      const hasJapanese = /[\u3040-\u30ff]/.test(token);
+      const hasEnglish = /[a-zA-Z]/.test(token);
+      if (hasChinese && !hasEnglish) return { token, type: 'hanzi' };
+      if (hasJapanese) return { token, type: 'japanese' };
+      if (hasEnglish) return { token, type: 'english' };
+      return { token, type: 'punct' };
+    });
+  }
+};
+
+// ===== 日语转换引擎 =====
+// 机制：去掉助词/语尾，汉字名词保留，功能词换英语
+const JA_ENGINE = {
+  // 日语助词 → 删除或替换
+  particles: [
+    ['について', ' about '], ['において', ' in '], ['によって', ' by '],
+    ['として', ' as '], ['までに', ' by '], ['ために', ' for '],
+    ['から', ' from '], ['まで', ' to '], ['より', ' than '],
+    ['でも', ' even '], ['しか', ' only '], ['だけ', ' only '],
+    ['ほど', ' about '], ['ごろ', ' around '], ['など', ' etc '],
+    ['では', ' at '], ['には', ' for '], ['とは', ' is '],
+    ['への', ' to '], ['との', ' with '], ['での', ' at '],
+    ['は', ''], ['が', ''], ['を', ''], ['に', ' '],
+    ['で', ' '], ['と', ' and '], ['も', ' also '],
+    ['の', "'s "], ['へ', ' to '], ['や', ' and '],
+    ['か', '?'], ['ね', '~'], ['よ', '!'], ['な', ''],
+    ['わ', ''], ['ぞ', '!'], ['ぜ', '!'],
+  ],
+  // 日语副词/形容词 → 英语
+  adverbs: [
+    ['とても', 'very '], ['非常に', 'very '], ['すごく', 'very '],
+    ['本当に', 'really '], ['全然', 'not at all '], ['全く', 'completely '],
+    ['もう', 'already '], ['まだ', 'still '], ['また', 'again '],
+    ['もっと', 'more '], ['少し', 'a little '], ['たくさん', 'a lot '],
+    ['いつも', 'always '], ['時々', 'sometimes '], ['絶対', 'absolutely '],
+    ['多分', 'maybe '], ['きっと', 'surely '], ['たぶん', 'probably '],
+    ['ちょっと', 'a bit '], ['かなり', 'quite '], ['ずっと', 'always '],
+  ],
+  // 日语动词/形容词常见形 → 英语
+  verbs: [
+    ['好きです', 'like'], ['好きだ', 'like'], ['嫌いです', 'dislike'],
+    ['あります', 'have'], ['います', 'is'], ['ありません', "don't have"],
+    ['いません', 'is not'], ['です', 'is'], ['だ', 'is'],
+    ['ます', ''], ['ました', '(past)'], ['ません', 'not'],
+    ['でした', 'was'], ['でしょう', 'will be'], ['だろう', 'will be'],
+    ['思います', 'think'], ['思う', 'think'], ['言います', 'say'],
+    ['行きます', 'go'], ['来ます', 'come'], ['食べます', 'eat'],
+    ['飲みます', 'drink'], ['見ます', 'see'], ['聞きます', 'hear'],
+    ['します', 'do'], ['できます', 'can do'], ['わかります', 'understand'],
+    ['知っています', 'know'], ['好きじゃない', "don't like"],
+    ['嬉しい', 'happy'], ['悲しい', 'sad'], ['楽しい', 'fun'],
+    ['難しい', 'difficult'], ['易しい', 'easy'], ['美しい', 'beautiful'],
+    ['かわいい', 'cute'], ['かっこいい', 'cool'], ['おいしい', 'delicious'],
+    ['すごい', 'amazing'], ['やばい', 'wow'], ['面白い', '有趣'],
+  ],
+  // 日语代词 → 保留或替换
+  pronouns: [
+    ['私は', '我 '], ['私が', '我 '], ['私を', '我 '], ['私の', '我的 '],
+    ['私', '我'], ['僕は', '我 '], ['僕が', '我 '], ['僕', '我'],
+    ['俺は', '我 '], ['俺', '我'], ['あなたは', '君 '], ['あなた', '君'],
+    ['君は', '君 '], ['君が', '君 '], ['彼は', '彼 '], ['彼が', '彼 '],
+    ['彼女は', '彼女 '], ['彼女が', '彼女 '], ['彼女', '彼女'],
+    ['彼', '彼'], ['私たち', '我们'], ['みんな', 'everyone'],
+  ],
+  // 时间词 → 保留汉字或英语
+  timeWords: [
+    ['今日', '今日'], ['明日', '明日'], ['昨日', '昨日'],
+    ['今', 'now'], ['後で', 'later'], ['前に', 'before'],
+    ['朝', '朝'], ['夜', '夜'], ['昼', '昼'],
+    ['今年', 'this year'], ['来年', 'next year'], ['去年', 'last year'],
+  ],
+  generate(text) {
+    let result = text;
+    const annotations = [];
+    // 按顺序：代词 → 时间词 → 动词/形容词 → 副词 → 助词
+    const allRules = [
+      ...this.pronouns,
+      ...this.timeWords,
+      ...this.verbs,
+      ...this.adverbs,
+      ...this.particles,
+    ];
+    // 按长度降序
+    allRules.sort((a, b) => b[0].length - a[0].length);
+    for (const [ja, en] of allRules) {
+      if (result.includes(ja)) {
+        result = result.split(ja).join(en !== '' ? ` ${en.trim()} ` : ' ');
+        if (en && en.trim() && /[a-zA-Z\u4e00-\u9fff]/.test(en)) {
+          annotations.push({ cn: ja, en: en.trim() });
+        }
+      }
+    }
+    // 清理平假名/片假名残留（无法转换的）
+    result = result.replace(/[\u3040-\u30ff]+/g, m => `[${m}]`);
+    result = result.replace(/\s+/g, ' ').trim();
+    result = result.replace(/\s+([?!~。、])/g, '$1');
+    return { text: result, annotations: annotations.slice(0, 8) };
+  }
+};
+
+// ===== 韩语转换引擎 =====
+// 机制：韩语助词/语尾去掉，汉字词（한자어）保留，功能词换英语
+const KO_ENGINE = {
+  // 韩语助词 → 删除或替换
+  particles: [
+    ['에서는', ' at '], ['에서도', ' also at '], ['에서', ' at '],
+    ['에게는', ' to '], ['에게도', ' also to '], ['에게', ' to '],
+    ['에는', ' at '], ['에도', ' also at '], ['에', ' '],
+    ['으로는', ' by '], ['으로도', ' also by '], ['으로', ' by '],
+    ['로는', ' by '], ['로도', ' also by '], ['로', ' by '],
+    ['에서부터', ' from '], ['부터', ' from '], ['까지', ' to '],
+    ['보다', ' than '], ['처럼', ' like '], ['만큼', ' as much as '],
+    ['이라고', ' called '], ['라고', ' called '], ['이라는', ' called '],
+    ['라는', ' called '], ['이라서', ' because '], ['라서', ' because '],
+    ['이지만', ' but '], ['지만', ' but '], ['이고', ' and '],
+    ['이며', ' and '], ['이나', ' or '], ['나', ' or '],
+    ['은', ''], ['는', ''], ['이', ''], ['가', ''],
+    ['을', ''], ['를', ''], ['의', "'s "], ['과', ' and '],
+    ['와', ' and '], ['도', ' also '], ['만', ' only '],
+    ['요', ''], ['죠', ''], ['네요', '!'], ['군요', '~'],
+  ],
+  // 韩语副词 → 英语
+  adverbs: [
+    ['정말로', 'really '], ['정말', 'really '], ['매우', 'very '],
+    ['아주', 'very '], ['너무', 'too '], ['굉장히', 'very '],
+    ['엄청', 'extremely '], ['조금', 'a little '], ['많이', 'a lot '],
+    ['항상', 'always '], ['자주', 'often '], ['가끔', 'sometimes '],
+    ['절대', 'never '], ['아마', 'maybe '], ['확실히', 'surely '],
+    ['벌써', 'already '], ['아직', 'still '], ['또', 'again '],
+    ['더', 'more '], ['덜', 'less '], ['빨리', 'quickly '],
+    ['천천히', 'slowly '], ['같이', 'together '], ['혼자', 'alone '],
+  ],
+  // 韩语常用动词/形容词 → 英语
+  verbs: [
+    ['좋아합니다', 'like'], ['좋아해요', 'like'], ['좋아해', 'like'],
+    ['싫어합니다', 'dislike'], ['싫어해요', 'dislike'],
+    ['있습니다', 'have'], ['있어요', 'have'], ['있어', 'have'],
+    ['없습니다', "don't have"], ['없어요', "don't have"],
+    ['입니다', 'is'], ['이에요', 'is'], ['예요', 'is'],
+    ['합니다', 'do'], ['해요', 'do'], ['해', 'do'],
+    ['갑니다', 'go'], ['가요', 'go'], ['가', 'go'],
+    ['옵니다', 'come'], ['와요', 'come'], ['와', 'come'],
+    ['먹습니다', 'eat'], ['먹어요', 'eat'], ['먹어', 'eat'],
+    ['마십니다', 'drink'], ['마셔요', 'drink'],
+    ['봅니다', 'see'], ['봐요', 'see'], ['봐', 'see'],
+    ['압니다', 'know'], ['알아요', 'know'],
+    ['모릅니다', "don't know"], ['몰라요', "don't know"],
+    ['생각합니다', 'think'], ['생각해요', 'think'],
+    ['말합니다', 'say'], ['말해요', 'say'],
+    ['배웁니다', 'study'], ['배워요', 'study'],
+    ['좋습니다', 'good'], ['좋아요', 'good'],
+    ['나쁩니다', 'bad'], ['나빠요', 'bad'],
+    ['예쁩니다', 'pretty'], ['예뻐요', 'pretty'],
+    ['귀엽습니다', 'cute'], ['귀여워요', 'cute'],
+    ['맛있습니다', 'delicious'], ['맛있어요', 'delicious'],
+    ['재미있습니다', '有趣'], ['재미있어요', '有趣'],
+    ['어렵습니다', 'difficult'], ['어려워요', 'difficult'],
+    ['쉽습니다', 'easy'], ['쉬워요', 'easy'],
+  ],
+  // 韩语代词 → 汉字或英语
+  pronouns: [
+    ['저는', '我 '], ['저가', '我 '], ['저를', '我 '], ['저의', '我的 '],
+    ['저', '我'], ['나는', '我 '], ['내가', '我 '], ['나를', '我 '],
+    ['나의', '我的 '], ['나', '我'], ['당신은', '君 '], ['당신', '君'],
+    ['너는', '君 '], ['네가', '君 '], ['너를', '君 '], ['너', '君'],
+    ['그는', '彼 '], ['그가', '彼 '], ['그를', '彼 '], ['그', '彼'],
+    ['그녀는', '彼女 '], ['그녀가', '彼女 '], ['그녀', '彼女'],
+    ['우리는', '我们 '], ['우리가', '我们 '], ['우리', '我们'],
+    ['모두', 'everyone'], ['다들', 'everyone'],
+  ],
+  // 时间词
+  timeWords: [
+    ['오늘', '今日'], ['내일', '明日'], ['어제', '昨日'],
+    ['지금', 'now'], ['나중에', 'later'], ['전에', 'before'],
+    ['아침', '朝'], ['저녁', '夜'], ['점심', '昼'],
+    ['올해', 'this year'], ['내년', 'next year'], ['작년', 'last year'],
+  ],
+  // 韩语汉字词（保留，因为中日用户能认出）
+  keepHanja: new Set([
+    '文化', '語言', '學習', '旅行', '音樂', '映畫', '美食',
+    '友情', '愛情', '家族', '學校', '會社', '病院',
+    '中國', '日本', '韓國', '美國', '北京', '東京', '首爾',
+    '漢字', '文字', '言語', '世界', '未來', '時間', '生活',
+  ]),
+  generate(text) {
+    let result = text;
+    const annotations = [];
+    const allRules = [
+      ...this.pronouns,
+      ...this.timeWords,
+      ...this.verbs,
+      ...this.adverbs,
+      ...this.particles,
+    ];
+    allRules.sort((a, b) => b[0].length - a[0].length);
+    for (const [ko, en] of allRules) {
+      if (result.includes(ko)) {
+        result = result.split(ko).join(en !== '' ? ` ${en.trim()} ` : ' ');
+        if (en && en.trim() && /[a-zA-Z\u4e00-\u9fff]/.test(en)) {
+          annotations.push({ cn: ko, en: en.trim() });
+        }
+      }
+    }
+    // 清理剩余韩文（无法转换的）
+    result = result.replace(/[\uac00-\ud7af\u1100-\u11ff]+/g, m => `[${m}]`);
+    result = result.replace(/\s+/g, ' ').trim();
+    result = result.replace(/\s+([?!~。])/g, '$1');
+    return { text: result, annotations: annotations.slice(0, 8) };
+  }
+};
+
+// ===== 当前输入语言 =====
+let inputLang = 'zh';
+
+function setInputLang(lang) {
+  inputLang = lang;
+  document.querySelectorAll('.ls-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+  const placeholders = {
+    zh: '输入中文句子，例如：\n我今天很开心，因为我的猫很可爱\n你喜欢中国文化吗？我觉得汉字很美',
+    ja: '日本語を入力してください：\n今日はとても嬉しいです、猫がかわいいから\nあなたは中国文化が好きですか？',
+    ko: '한국어를 입력하세요：\n오늘은 정말 행복해요, 고양이가 귀여워서\n당신은 중국 문화를 좋아해요?',
+  };
+  document.getElementById('genInput').placeholder = placeholders[lang];
+  // 更新快速示例
+  renderQuickFill();
+}
+
+// ===== 三语快速示例 =====
+
+
+// ===== STATE =====
+let currentPseudo = '';
+
+// ===== INIT =====
+function initPseudo() {
+  renderQuickFill();
+  renderDialogs();
+  renderExplainer();
+}
+
+// ===== MODE SWITCH =====
+function switchPseudoMode(mode) {
+  ['generate','decode','dialogs','explain'].forEach(m => {
+    document.getElementById('mode-' + m).style.display = m === mode ? 'block' : 'none';
+  });
+  document.querySelectorAll('.mode-tab').forEach((btn, i) => {
+    btn.classList.toggle('active', ['generate','decode','dialogs','explain'][i] === mode);
+  });
+}
+
+// ===== QUICK FILL =====
+function renderQuickFill() {
+  const el = document.getElementById('quickFill');
+  el.innerHTML = '';
+  const filtered = QUICK_EXAMPLES.filter(ex => ex.lang === inputLang);
+  filtered.forEach(ex => {
+    const chip = document.createElement('div');
+    chip.className = 'quick-chip';
+    chip.textContent = ex.label;
+    chip.onclick = () => {
+      document.getElementById('genInput').value = ex.text;
+    };
+    el.appendChild(chip);
+  });
+}
+
+// ===== GENERATE =====
+function doGenerate() {
+  const text = document.getElementById('genInput').value.trim();
+  if (!text) {
+    const hints = { zh: '请先输入中文句子', ja: '日本語を入力してください', ko: '한국어를 입력하세요' };
+    showToast(hints[inputLang] || '请先输入文字');
+    return;
+  }
+
+  // 根据语言选择引擎
+  const engines = { zh: PSEUDO_ENGINE, ja: JA_ENGINE, ko: KO_ENGINE, fr: FR_ENGINE, de: DE_ENGINE, es: ES_ENGINE };
+  const engine = engines[inputLang] || PSEUDO_ENGINE;
+  const { text: pseudo, annotations } = engine.generate(text);
+  currentPseudo = pseudo;
+
+  // 渲染带颜色的结果
+  const resultEl = document.getElementById('resultText');
+  resultEl.innerHTML = colorizeText(pseudo);
+
+  // 渲染注释
+  const annEl = document.getElementById('annotations');
+  const langLabels = { zh: '中文→英语', ja: '日語→英語', ko: '한국어→English' };
+  if (annotations.length > 0) {
+    annEl.innerHTML = `
+      <div class="ann-title">${langLabels[inputLang] || ''} · REPLACEMENT RULES</div>
+      <div class="ann-list">
+        ${annotations.slice(0, 8).map(a =>
+          `<div class="ann-item">
+            <span class="ann-cn">${a.cn}</span>
+            <span class="ann-arrow">→</span>
+            <span class="ann-en">${a.en}</span>
+          </div>`
+        ).join('')}
+      </div>`;
+  } else {
+    annEl.innerHTML = '';
+  }
+
+  document.getElementById('resultBox').classList.add('show');
+}
+
+function colorizeText(text) {
+  const tokens = text.split(/(\s+)/);
+  return tokens.map(token => {
+    if (!token.trim()) return token;
+    const hasChinese = /[\u4e00-\u9fff]/.test(token);
+    const hasJapanese = /[\u3040-\u30ff]/.test(token);
+    const hasEnglish = /[a-zA-Z]/.test(token);
+    if (hasChinese && !hasEnglish) return `<span class="w-hanzi">${token}</span>`;
+    if (hasJapanese) return `<span class="w-japanese">${token}</span>`;
+    if (hasEnglish) return `<span class="w-english">${token}</span>`;
+    return token;
+  }).join('');
+}
+
+function copyPseudo() {
+  if (!currentPseudo) return;
+  navigator.clipboard.writeText(currentPseudo).then(() => showToast('已复制偽中国語密码！'));
+}
+
+function decodeCurrent() {
+  if (!currentPseudo) return;
+  document.getElementById('decodeInput').value = currentPseudo;
+  switchPseudoMode('decode');
+  doDecode();
+}
+
+function shareToChat() {
+  if (!currentPseudo) return;
+  const shareText = `【偽中国語2.0密码】
+${currentPseudo}
+
+中国人✅ 日本人✅ 英语用户✅
+来自：说中文 ShuoZhongWen`;
+  navigator.clipboard.writeText(shareText).then(() => showToast('分享文案已复制！'));
+}
+
+// ===== DECODE =====
+function fillDecode(text) {
+  document.getElementById('decodeInput').value = text;
+}
+
+function doDecode() {
+  const text = document.getElementById('decodeInput').value.trim();
+  if (!text) { showToast('请先输入偽中国語文本'); return; }
+
+  const tokens = PSEUDO_ENGINE.decode(text);
+
+  // Token flow
+  const flowEl = document.getElementById('tokenFlow');
+  flowEl.innerHTML = tokens.map(t =>
+    `<span class="token ${t.type}" title="${
+      t.type === 'hanzi' ? '汉字（中日共通）' :
+      t.type === 'english' ? '英语语法词' :
+      t.type === 'japanese' ? '日语假名' : '标点'
+    }">${t.token}</span>`
+  ).join('');
+
+  // 统计
+  const counts = { hanzi: 0, english: 0, japanese: 0 };
+  tokens.forEach(t => { if (counts[t.type] !== undefined) counts[t.type]++; });
+  const total = counts.hanzi + counts.english + counts.japanese || 1;
+
+  document.getElementById('decodeMeaning').innerHTML = `
+    <div class="dm-label">成分分析 · COMPOSITION ANALYSIS</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:10px">
+      <div style="text-align:center">
+        <div style="font-size:20px;font-weight:800;color:#ff2442">${counts.hanzi}</div>
+        <div style="font-size:11px;color:var(--gray)">汉字词</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:20px;font-weight:800;color:#28a745">${counts.english}</div>
+        <div style="font-size:11px;color:var(--gray)">英语词</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:20px;font-weight:800;color:#0066cc">${counts.japanese}</div>
+        <div style="font-size:11px;color:var(--gray)">日语词</div>
+      </div>
+    </div>
+    <div class="dm-text">
+      ${counts.hanzi > 0 ? '🔴 <strong>红色汉字</strong>：中日两国共通，双方都能直接理解<br>' : ''}
+      ${counts.english > 0 ? '🟢 <strong>绿色英语</strong>：替代语法/副词，英语用户也能看懂<br>' : ''}
+      ${counts.japanese > 0 ? '🔵 <strong>蓝色日语</strong>：日语特有表达，增加趣味性<br>' : ''}
+      <br>这段文字<strong>三国人都能大致理解</strong>，但普通翻译器无法正确翻译——因为它不属于任何一种标准语言。
+    </div>`;
+
+  document.getElementById('decodeResult').classList.add('show');
+}
+
+// ===== DIALOGS =====
+function renderDialogs() {
+  const el = document.getElementById('dialogsBody');
+  el.innerHTML = PSEUDO_DIALOGS.map(dialog => `
+    <div class="dialog-scene">
+      <div class="scene-title">${dialog.scene}</div>
+      <div class="dialog-messages">
+        ${dialog.messages.map(msg => `
+          <div class="dialog-msg">
+            <div class="msg-lang">${msg.lang}</div>
+            <div class="msg-bubble">
+              <div class="pseudo-text">${colorizeDialogText(msg.text)}</div>
+              <div class="meaning-text">💡 ${msg.meaning}</div>
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>`).join('<hr style="border:none;border-top:1px solid var(--border);margin:20px 0">');
+}
+
+function colorizeDialogText(text) {
+  const tokens = text.split(/(\s+)/);
+  return tokens.map(token => {
+    if (!token.trim()) return token;
+    const hasChinese = /[\u4e00-\u9fff]/.test(token);
+    const hasJapanese = /[\u3040-\u30ff]/.test(token);
+    const hasEnglish = /[a-zA-Z]/.test(token);
+    if (hasChinese && !hasEnglish) return `<span class="w-hanzi">${token}</span>`;
+    if (hasJapanese) return `<span class="w-japanese">${token}</span>`;
+    if (hasEnglish) return `<span class="w-english">${token}</span>`;
+    return token;
+  }).join('');
+}
+
+// ===== EXPLAINER =====
+function renderExplainer() {
+  const el = document.getElementById('explainerGrid');
+  el.innerHTML = EXPLAINER_DATA.map(item => `
+    <div class="explainer-card">
+      <div class="ec-version">${item.version}</div>
+      <div class="ec-title">${item.title}</div>
+      <div class="ec-desc">${item.desc}</div>
+      <div class="ec-example">
+        <div class="orig">原文：${item.orig}</div>
+        <div class="pseudo">${item.pseudo}</div>
+        <div style="font-size:11px;color:var(--gray);margin-top:4px">${item.note}</div>
+      </div>
+    </div>`).join('');
+}
+
+// ===== SHARE =====
+function copyShareText() {
+  const text = `【偽中国語2.0 — 中日英三语密码】
+
+日本网友@安处岛的天才发现：
+汉字名词（中日共通）+ 英语语法词 = 三国人都能看懂！
+
+例：我 today is very 开心, because 我's 猫 is very 可爱
+
+中国人✅ 日本人✅ 英语用户✅ 翻译器❌
+
+来自：说中文 ShuoZhongWen`;
+  navigator.clipboard.writeText(text).then(() => showToast('分享文案已复制！'));
+}
+
+// ===== MODULES DATA =====
+// ===== 界面多语言文本 =====
+
+
+// ===== 全页文本扩展 =====
+
+
+// ===== 全页渲染函数 =====
+function renderPage() {
+  const p = PAGE_TEXT[uiLang] || PAGE_TEXT.zh;
+
+  // Hero
+  const heroEl = document.getElementById('page-hero');
+  if (heroEl) {
+    heroEl.innerHTML = `
+      <div class="hero-section">
+        <div class="hero-tags">
+          <span class="htag htag-fire">${p.tag_fire}</span>
+          <span class="htag htag-tiktok">${p.tag_tiktok}</span>
+          <span class="htag htag-new">${p.tag_new}</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="ht-line1">${p.hero_line1}</span>
+          <span class="ht-arrow">→</span>
+          <span class="ht-line2">${p.hero_line2}</span>
+        </h1>
+        <p class="hero-sub">${p.hero_sub}</p>
+        <div class="hero-stats">
+          <div class="hstat"><div class="hstat-num" id="statUsers">12,847</div><div class="hstat-label">${p.stat1_label}</div></div>
+          <div class="hstat-divider"></div>
+          <div class="hstat"><div class="hstat-num">216%</div><div class="hstat-label">${p.stat2_label}</div></div>
+          <div class="hstat-divider"></div>
+          <div class="hstat"><div class="hstat-num">12+</div><div class="hstat-label">${p.stat3_label}</div></div>
+          <div class="hstat-divider"></div>
+          <div class="hstat"><div class="hstat-num">3</div><div class="hstat-label">${p.stat4_label}</div></div>
+        </div>
+      </div>`;
+  }
+
+  // 卖点卡片
+  const spEl = document.getElementById('page-selling');
+  if (spEl) {
+    spEl.innerHTML = `
+      <div class="selling-points">
+        <div class="sp-card sp-translate">
+          <div class="sp-icon">🔄</div>
+          <div class="sp-title">${p.sp1_title}</div>
+          <div class="sp-desc">${p.sp1_desc}</div>
+          <div class="sp-demo">
+            <span class="demo-from">こんにちは</span>
+            <span class="demo-arrow">→</span>
+            <span class="demo-to">你好 <em>nǐ hǎo</em></span>
+          </div>
+          <button class="sp-btn" onclick="switchZone('translate')">${p.sp1_btn}</button>
+        </div>
+        <div class="sp-card sp-pseudo sp-featured">
+          <div class="sp-badge">${p.sp2_badge}</div>
+          <div class="sp-icon">🔐</div>
+          <div class="sp-title">${p.sp2_title}</div>
+          <div class="sp-desc">${p.sp2_desc}</div>
+          <div class="sp-demo sp-demo-dark">
+            <div class="demo-pseudo">
+              <span class="dp-hanzi">我</span><span class="dp-en">today is very</span>
+              <span class="dp-hanzi">开心</span><span class="dp-en">, because</span>
+              <span class="dp-hanzi">猫</span><span class="dp-en">is very</span>
+              <span class="dp-hanzi">可爱</span>
+            </div>
+            <div class="demo-flags">${p.sp2_flags}</div>
+          </div>
+          <button class="sp-btn sp-btn-white" onclick="switchZone('fun')">${p.sp2_btn}</button>
+        </div>
+        <div class="sp-card sp-fun">
+          <div class="sp-icon">🎮</div>
+          <div class="sp-title">${p.sp3_title}</div>
+          <div class="sp-desc">${p.sp3_desc}</div>
+          <div class="sp-demo">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center">
+              ${(p.sp3_tags || []).map(tag => `<span class="demo-tag">${tag}</span>`).join('')}
+            </div>
+          </div>
+          <button class="sp-btn" onclick="switchZone('learn')">${p.sp3_btn}</button>
+        </div>
+      </div>`;
+  }
+
+  // 社交证明
+  const socEl = document.getElementById('page-social');
+  if (socEl) {
+    const items = (p.proof || []).map(item => `<div class="proof-item">${item}</div>`).join('');
+    socEl.innerHTML = `
+      <div class="social-proof">
+        <div class="proof-scroll" id="proofScroll">${items}${items}</div>
+      </div>`;
+  }
+
+  // Footer
+  const footEl = document.getElementById('page-footer');
+  if (footEl) {
+    footEl.innerHTML = `
+      <div>${p.footer_brand}</div>
+      <div style="margin-top:6px">${p.footer_api}</div>
+      <div style="margin-top:6px;font-size:12px">🐱 已有 <span id="userCount">12,847</span> ${p.footer_users}</div>`;
+  }
+
+  // 更新翻译器界面文本
+  const transTitle = document.querySelector('[data-t="trans_title"]');
+  if (transTitle) transTitle.textContent = p.trans_title;
+  const transDesc = document.querySelector('[data-t="trans_desc"]');
+  if (transDesc) transDesc.textContent = p.trans_desc;
+  const transBtn = document.getElementById('btnText');
+  if (transBtn) transBtn.textContent = p.trans_btn;
+  const pinyinTitle = document.querySelector('[data-t="pinyin_title"]');
+  if (pinyinTitle) pinyinTitle.textContent = p.pinyin_title;
+  const pinyinDesc = document.querySelector('[data-t="pinyin_desc"]');
+  if (pinyinDesc) pinyinDesc.textContent = p.pinyin_desc;
+
+  // 更新 data-t 静态元素
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const key = el.getAttribute('data-t');
+    const val = (PAGE_TEXT[uiLang] || PAGE_TEXT.zh)[key] || (UI_LANG[uiLang] || UI_LANG.zh)[key];
+    if (!val) return;
+    if (el.children.length === 0) {
+      el.textContent = val;
+    } else {
+      for (let i = el.childNodes.length - 1; i >= 0; i--) {
+        if (el.childNodes[i].nodeType === 3 && el.childNodes[i].textContent.trim()) {
+          el.childNodes[i].textContent = val;
+          break;
+        }
+      }
+    }
+  });
+  document.querySelectorAll('[data-tp]').forEach(el => {
+    el.placeholder = (PAGE_TEXT[uiLang] || PAGE_TEXT.zh)[el.getAttribute('data-tp')] || (UI_LANG[uiLang] || UI_LANG.zh)[el.getAttribute('data-tp')] || el.placeholder;
+  });
+
+  // 重新启动数字动画
+  animateUserCount();
+}
+
+// ===== 覆盖 setUiLang =====
+function setUiLang(lang) {
+  uiLang = lang;
+  // 重置懒加载标志
+  window._zone_learn_inited = false;
+  window._zone_fun_inited = false;
+  window._zone_interact_inited = false;
+  // 渲染全页
+  renderPage();
+  // 重新渲染当前激活的区域
+  const activeZone = document.querySelector('.zone-btn.active');
+  if (activeZone) switchZone(activeZone.dataset.zone);
+}
+
+// init() already patched above
+
+
+// ===== 成语/网络梗数据库 =====
+
+
+// ===== 声调练习数据 =====
+
+
+// ===== MODULES LOGIC =====
+// ===== 全局语言状态 =====
+let uiLang = 'zh';
+function t(key) { return (UI_LANG[uiLang] || UI_LANG.zh)[key] || key; }
+
+
+function switchZone(zone) {
+  document.querySelectorAll('.zone-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.zone-btn').forEach(b => b.classList.toggle('active', b.dataset.zone === zone));
+  const panel = document.getElementById('zone-' + zone);
+  if (panel) panel.style.display = 'block';
+
+  // 懒初始化
+  const inits = { learn: initLearnZone, fun: initFunZone, interact: initInteractZone };
+  const key = '_zone_' + zone + '_inited';
+  if (inits[zone] && !window[key]) { window[key] = true; inits[zone](); }
+  // 同步移动端底部导航
+  document.querySelectorAll('.mnav-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.zone === zone);
+  });
+}
+
+// ===== 学习区 =====
+let dailyIdx = 0;
+let toneScore = 0, toneTotal = 0, toneAnswered = false;
+let flashCards = [], flashIdx = 0, flashFlipped = false;
+
+function initLearnZone() {
+  dailyIdx = Math.floor(Date.now() / 86400000) % DAILY_PHRASES.length;
+  renderDaily();
+  renderFlash();
+  renderTone();
+}
+
+function switchLearnTab(tab) {
+  ['daily','flash','tone'].forEach(tab_id => {
+    const el = document.getElementById('learn-' + tab_id);
+    if (el) el.style.display = tab_id === tab ? 'block' : 'none';
+  });
+  document.querySelectorAll('.learn-sub-tab').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tab);
+  });
+}
+
+// 每日一句
+function renderDaily() {
+  const p = DAILY_PHRASES[dailyIdx % DAILY_PHRASES.length];
+  const el = document.getElementById('daily-content');
+  if (!el) return;
+  const now = new Date();
+  el.innerHTML = `
+    <div class="daily-date">${now.getFullYear()}.${String(now.getMonth()+1).padStart(2,'0')}.${String(now.getDate()).padStart(2,'0')}</div>
+    <div class="daily-zh">${p.zh}</div>
+    <div class="daily-py">${p.py}</div>
+    <div class="daily-en">${p.en}</div>
+    <div class="daily-note">💡 ${p.note}</div>
+    <div class="daily-actions">
+      <button class="daily-btn" onclick="speakChinese('${p.zh.replace(/'/g,"'")}')">🔊 朗读</button>
+      <button class="daily-btn" onclick="copyDaily()">📋 <span data-t="daily_copy">${t('daily_copy')}</span></button>
+      <button class="daily-btn primary" onclick="nextDaily()"><span data-t="daily_btn">${t('daily_btn')}</span></button>
+    </div>`;
+  window._currentDaily = p;
+}
+function nextDaily() { dailyIdx = (dailyIdx + 1) % DAILY_PHRASES.length; renderDaily(); }
+function copyDaily() {
+  if (!window._currentDaily) return;
+  const p = window._currentDaily;
+  navigator.clipboard.writeText(`${p.zh}
+${p.py}
+${p.en}`).then(() => showToast('已复制！'));
+}
+
+// 闪卡
+function loadFlashCards() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('szw_vocab') || '[]');
+    return saved;
+  } catch(e) { return []; }
+}
+function saveVocabWord(zh, py, en) {
+  const list = loadFlashCards();
+  if (!list.find(w => w.zh === zh)) {
+    list.push({ zh, py, en, nextReview: Date.now(), interval: 1, ef: 2.5 });
+    localStorage.setItem('szw_vocab', JSON.stringify(list));
+  }
+}
+function renderFlash() {
+  flashCards = loadFlashCards().filter(w => w.nextReview <= Date.now() + 86400000);
+  flashIdx = 0; flashFlipped = false;
+  const el = document.getElementById('flash-content');
+  if (!el) return;
+  if (flashCards.length === 0) {
+    el.innerHTML = `<div class="fc-empty"><div class="fc-empty-icon">📭</div><div>${t('flash_empty')}</div></div>`;
+    return;
+  }
+  renderFlashCard();
+}
+function renderFlashCard() {
+  const el = document.getElementById('flash-content');
+  if (!el || flashIdx >= flashCards.length) {
+    if (el) el.innerHTML = `<div class="fc-empty"><div class="fc-empty-icon">🎉</div><div>${t('flash_done')} ${flashCards.length} ${t('flash_words')}</div></div>`;
+    return;
+  }
+  const card = flashCards[flashIdx];
+  flashFlipped = false;
+  el.innerHTML = `
+    <div class="fc-progress">${flashIdx + 1} / ${flashCards.length}</div>
+    <div class="flashcard-area">
+      <div class="flashcard" id="fc-card" onclick="flipFlashCard()">
+        <div class="fc-face fc-front">
+          <div class="fc-char">${card.zh}</div>
+          <div class="fc-hint">点击翻转 / Click to flip</div>
+        </div>
+        <div class="fc-face fc-back">
+          <div class="fc-py">${card.py || ''}</div>
+          <div class="fc-meaning">${card.zh}</div>
+          <div class="fc-en">${card.en || ''}</div>
+        </div>
+      </div>
+    </div>
+    <div class="fc-actions" id="fc-actions" style="display:none">
+      <button class="fc-btn fc-btn-unknown" onclick="flashAnswer(false)">${t('flash_unknown')}</button>
+      <button class="fc-btn fc-btn-know" onclick="flashAnswer(true)">${t('flash_know')}</button>
+    </div>`;
+}
+function flipFlashCard() {
+  const card = document.getElementById('fc-card');
+  if (!card) return;
+  flashFlipped = !flashFlipped;
+  card.classList.toggle('flipped', flashFlipped);
+  const actions = document.getElementById('fc-actions');
+  if (actions) actions.style.display = flashFlipped ? 'flex' : 'none';
+}
+function flashAnswer(knew) {
+  // 简化版SM-2间隔复习
+  const card = flashCards[flashIdx];
+  const all = loadFlashCards();
+  const idx = all.findIndex(w => w.zh === card.zh);
+  if (idx >= 0) {
+    if (knew) {
+      all[idx].interval = Math.round((all[idx].interval || 1) * (all[idx].ef || 2.5));
+      all[idx].ef = Math.max(1.3, (all[idx].ef || 2.5) + 0.1);
+    } else {
+      all[idx].interval = 1;
+      all[idx].ef = Math.max(1.3, (all[idx].ef || 2.5) - 0.2);
+    }
+    all[idx].nextReview = Date.now() + all[idx].interval * 86400000;
+    localStorage.setItem('szw_vocab', JSON.stringify(all));
+  }
+  flashIdx++;
+  renderFlashCard();
+}
+
+// 声调练习
+let toneQueue = [];
+function renderTone() {
+  toneScore = 0; toneTotal = 0;
+  toneQueue = [...TONE_EXERCISES].sort(() => Math.random() - 0.5);
+  renderToneQuestion();
+}
+function renderToneQuestion() {
+  const el = document.getElementById('tone-content');
+  if (!el) return;
+  if (toneQueue.length === 0) {
+    el.innerHTML = `<div class="tone-game">
+      <div style="font-size:48px;margin-bottom:16px">🎉</div>
+      <div style="font-size:20px;font-weight:700;margin-bottom:8px">${t('tone_score')}: ${toneScore} / ${toneTotal}</div>
+      <div style="color:var(--gray);margin-bottom:20px">${Math.round(toneScore/toneTotal*100)}% 正确率</div>
+      <button class="daily-btn primary" onclick="renderTone()">再来一轮</button>
+    </div>`;
+    return;
+  }
+  const q = toneQueue[0];
+  toneAnswered = false;
+  // 生成4个选项（1-4声）
+  const toneNames = ['', '第一声 ā', '第二声 á', '第三声 ǎ', '第四声 à'];
+  const toneDescs = ['', '高平调', '上升调', '先降后升', '急降调'];
+  // 找同音字作为选项
+  const sameInitial = TONE_EXERCISES.filter(e => e.char !== q.char);
+  const opts = [1,2,3,4].map(tone => {
+    const ex = sameInitial.find(e => e.tone === tone) || { char: ['一','二','三','四'][tone-1], meaning: '' };
+    return { tone, name: toneNames[tone], desc: toneDescs[tone], example: ex.char };
+  }).sort(() => Math.random() - 0.5);
+
+  el.innerHTML = `<div class="tone-game">
+    <div class="tone-score-bar">
+      <span>${t('tone_score')}</span>
+      <span class="tone-score-num">${toneScore} / ${toneTotal}</span>
+    </div>
+    <div style="margin:20px 0">
+      <div class="tone-char-display">${q.char}</div>
+      <div class="tone-meaning">${q.meaning}</div>
+      <button class="daily-btn" onclick="speakChinese('${q.char}')" style="margin-bottom:16px">${t('tone_listen')}</button>
+    </div>
+    <div class="tone-options" id="tone-opts">
+      ${opts.map(o => `
+        <button class="tone-opt" onclick="checkTone(${o.tone}, ${q.tone}, this)">
+          <span class="to-num">${o.tone}</span>
+          <span class="to-name">${o.desc}</span>
+          <span class="to-example">${o.example}</span>
+        </button>`).join('')}
+    </div>
+  </div>`;
+}
+function checkTone(selected, correct, btn) {
+  if (toneAnswered) return;
+  toneAnswered = true; toneTotal++;
+  const allBtns = document.querySelectorAll('.tone-opt');
+  allBtns.forEach(b => b.disabled = true);
+  if (selected === correct) {
+    btn.classList.add('correct');
+    toneScore++;
+    showToast(t('tone_correct') + ' +1');
+  } else {
+    btn.classList.add('wrong');
+    allBtns.forEach(b => { if (parseInt(b.querySelector('.to-num').textContent) === correct) b.classList.add('correct'); });
+    showToast(t('tone_wrong'));
+  }
+  toneQueue.shift();
+  setTimeout(renderToneQuestion, 1200);
+}
+
+// ===== 趣味区 =====
+let idiomFilter = 'all';
+function initFunZone() {
+  renderIdiomSearch('');
+  renderFunQuickFill();
+}
+function switchFunTab(tab) {
+  ['idiom','pseudo-fun'].forEach(tab_id => {
+    const el = document.getElementById('fun-' + tab_id);
+    if (el) el.style.display = tab_id === tab ? 'block' : 'none';
+  });
+  document.querySelectorAll('.fun-sub-tab').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tab);
+  });
+}
+function renderIdiomSearch(query) {
+  const el = document.getElementById('idiom-results');
+  if (!el) return;
+  let results = IDIOM_DB;
+  if (idiomFilter !== 'all') results = results.filter(r => r.type === idiomFilter);
+  if (query.trim()) {
+    const q = query.toLowerCase();
+    results = results.filter(r =>
+      r.word.includes(q) || r.py.includes(q) || r.meaning.includes(q) || r.en.toLowerCase().includes(q)
+    );
+  }
+  if (results.length === 0) {
+    el.innerHTML = '<div style="text-align:center;padding:30px;color:var(--gray)">没有找到相关结果</div>';
+    return;
+  }
+  el.innerHTML = results.map(r => `
+    <div class="idiom-card">
+      <div class="idiom-header">
+        <span class="idiom-word">${r.word}</span>
+        <span class="idiom-py">${r.py}</span>
+        <span class="idiom-type-badge ${r.type === 'idiom' ? 'badge-idiom' : 'badge-slang'}">
+          ${r.type === 'idiom' ? t('idiom_idiom') : t('idiom_slang')}
+        </span>
+      </div>
+      <div class="idiom-meaning">${r.meaning}</div>
+      <div class="idiom-en">🌐 ${r.en}</div>
+      <div class="idiom-example">${r.example}</div>
+    </div>`).join('');
+}
+function setIdiomFilter(f) {
+  idiomFilter = f;
+  document.querySelectorAll('.idiom-filter-btn').forEach(b => b.classList.toggle('active', b.dataset.f === f));
+  const q = document.getElementById('idiom-input');
+  renderIdiomSearch(q ? q.value : '');
+}
+
+// ===== 互动区 =====
+let communityPosts = [];
+function initInteractZone() {
+  // 从localStorage加载帖子
+  try { communityPosts = JSON.parse(localStorage.getItem('szw_posts') || '[]'); } catch(e) { communityPosts = []; }
+  // 预置几条示例帖子
+  if (communityPosts.length === 0) {
+    communityPosts = [
+      { id: 1, text: "我 today is very 开心, because 猫 is very 可爱!", lang: "🇨🇳", name: "小红书用户", time: Date.now() - 3600000, likes: 42, liked: false },
+      { id: 2, text: "君's 提案 is very 有趣! 偽中国語2.0 天才!", lang: "🇯🇵", name: "日本用户", time: Date.now() - 7200000, likes: 38, liked: false },
+      { id: 3, text: "我 am now at 小红书. 猫税 is very 重要! 我 love 中文!", lang: "🇺🇸", name: "TikTok难民", time: Date.now() - 10800000, likes: 55, liked: false },
+      { id: 4, text: "我 also have 猫. 彼 is my 家人. 中文 is very 美!", lang: "🇰🇷", name: "韩国用户", time: Date.now() - 14400000, likes: 29, liked: false },
+    ];
+  }
+  renderCommunity();
+}
+function renderCommunity() {
+  const el = document.getElementById('community-feed');
+  if (!el) return;
+  if (communityPosts.length === 0) {
+    el.innerHTML = `<div class="community-empty"><div class="ce-icon">💬</div><div>${t('community_empty')}</div></div>`;
+    return;
+  }
+  el.innerHTML = communityPosts.slice().reverse().map(p => `
+    <div class="community-item" id="post-${p.id}">
+      <div class="ci-header">
+        <div class="ci-avatar">${p.name[0]}</div>
+        <div>
+          <div class="ci-name">${p.name}</div>
+        </div>
+        <span class="ci-flag">${p.lang}</span>
+        <span class="ci-time">${formatTime(p.time)}</span>
+      </div>
+      <div class="ci-text">${colorizeDialogText(p.text)}</div>
+      <div class="ci-footer">
+        <button class="ci-like-btn ${p.liked ? 'liked' : ''}" onclick="toggleLike(${p.id})">
+          ${p.liked ? '❤️' : '🤍'} <span id="likes-${p.id}">${p.likes}</span>
+        </button>
+        <button class="ci-decode-btn" onclick="decodePost(${p.id}, this)">🔍 解码</button>
+        <span class="ci-lang-tag">${p.lang} 偽中国語2.0</span>
+      </div>
+      <div class="ci-decode-result" id="decode-${p.id}" style="display:none"></div>
+    </div>`).join('');
+}
+function submitPost() {
+  const ta = document.getElementById('community-input');
+  if (!ta) return;
+  const text = ta.value.trim();
+  if (!text) { showToast('请先写点什么'); return; }
+  const flags = { zh: '🇨🇳', en: '🇺🇸', ja: '🇯🇵', ko: '🇰🇷' };
+  const names = { zh: '中文用户', en: 'English User', ja: '日本ユーザー', ko: '한국 사용자' };
+  const post = {
+    id: Date.now(), text, lang: flags[uiLang] || '🌐',
+    name: names[uiLang] || 'User',
+    time: Date.now(), likes: 0, liked: false
+  };
+  communityPosts.push(post);
+  try { localStorage.setItem('szw_posts', JSON.stringify(communityPosts)); } catch(e) {}
+  ta.value = '';
+  renderCommunity();
+  showToast('发布成功！');
+}
+function decodePost(id, btn) {
+  const post = communityPosts.find(p => p.id === id);
+  if (!post) return;
+  const resultEl = document.getElementById('decode-' + id);
+  if (!resultEl) return;
+  if (resultEl.style.display !== 'none') {
+    resultEl.style.display = 'none';
+    btn.textContent = '🔍 解码';
+    return;
+  }
+  const tokens = PSEUDO_ENGINE.decode(post.text);
+  const counts = { hanzi: 0, english: 0, japanese: 0 };
+  tokens.forEach(t => { if (counts[t.type] !== undefined) counts[t.type]++; });
+  resultEl.innerHTML = '<div class="ci-decode-inner">' +
+    '<div class="cdi-tokens">' +
+    tokens.map(t => '<span class="token ' + t.type + '">' + t.token + '</span>').join('') +
+    '</div>' +
+    '<div class="cdi-stats">🔴 汉字×' + counts.hanzi + ' 🟢 英语×' + counts.english + ' 🔵 日语×' + counts.japanese + '</div>' +
+    '</div>';
+  resultEl.style.display = 'block';
+  btn.textContent = '▲ 收起';
+}
+
+function toggleLike(id) {
+  const post = communityPosts.find(p => p.id === id);
+  if (!post) return;
+  post.liked = !post.liked;
+  post.likes += post.liked ? 1 : -1;
+  try { localStorage.setItem('szw_posts', JSON.stringify(communityPosts)); } catch(e) {}
+  const btn = document.querySelector(`#post-${id} .ci-like-btn`);
+  const cnt = document.getElementById(`likes-${id}`);
+  if (btn) { btn.classList.toggle('liked', post.liked); btn.querySelector('span:first-child') && (btn.innerHTML = `${post.liked ? '❤️' : '🤍'} <span id="likes-${id}">${post.likes}</span>`); }
+  if (cnt) cnt.textContent = post.likes;
+}
+function formatTime(ts) {
+  const diff = Date.now() - ts;
+  if (diff < 60000) return '刚刚';
+  if (diff < 3600000) return Math.floor(diff/60000) + '分钟前';
+  if (diff < 86400000) return Math.floor(diff/3600000) + '小时前';
+  return Math.floor(diff/86400000) + '天前';
+}
+
+
+// 同步移动端导航和桌面导航
+
+// ===== START =====
+
+// ===== 趣味区偽中国語生成器 =====
+let funInputLang = 'zh';
+let funCurrentPseudo = '';
+
+function setFunInputLang(lang) {
+  funInputLang = lang;
+  document.querySelectorAll('#funLangSwitcher .ls-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+  const phs = {
+    zh: '输入中文句子，例如：我今天很开心，因为我的猫很可爱',
+    ja: '日本語を入力してください：今日はとても嬉しいです',
+    ko: '한국어를 입력하세요：오늘은 정말 행복해요',
+    fr: 'Entrez une phrase en francais：Je suis tres heureux',
+    de: 'Geben Sie einen deutschen Satz ein：Ich bin sehr gluecklich',
+    es: 'Ingrese una frase en espanol：Estoy muy feliz',
+  };
+  const inp = document.getElementById('funGenInput');
+  if (inp) inp.placeholder = phs[lang] || phs.zh;
+  renderFunQuickFill();
+}
+
+function renderFunQuickFill() {
+  const el = document.getElementById('funQuickFill');
+  if (!el) return;
+  el.innerHTML = '';
+  const filtered = (QUICK_EXAMPLES || []).filter(ex => ex.lang === funInputLang).slice(0, 3);
+  filtered.forEach(ex => {
+    const chip = document.createElement('div');
+    chip.className = 'quick-chip';
+    chip.textContent = ex.label;
+    chip.onclick = () => {
+      const inp = document.getElementById('funGenInput');
+      if (inp) inp.value = ex.text;
+    };
+    el.appendChild(chip);
+  });
+}
+
+function doFunGenerate() {
+  const inp = document.getElementById('funGenInput');
+  if (!inp) return;
+  const text = inp.value.trim();
+  if (!text) { showToast('请先输入文字'); return; }
+  const engines = { zh: PSEUDO_ENGINE, ja: JA_ENGINE, ko: KO_ENGINE, fr: FR_ENGINE, de: DE_ENGINE, es: ES_ENGINE };
+  const engine = engines[funInputLang] || PSEUDO_ENGINE;
+  const { text: pseudo, annotations } = engine.generate(text);
+  funCurrentPseudo = pseudo;
+  const resultEl = document.getElementById('funResultText');
+  if (resultEl) resultEl.innerHTML = colorizeText(pseudo);
+  const annEl = document.getElementById('funAnnotations');
+  if (annEl && annotations.length > 0) {
+    annEl.innerHTML = '<div class="ann-title">替换规则</div><div class="ann-list">' +
+      annotations.slice(0, 6).map(a =>
+        '<div class="ann-item"><span class="ann-cn">' + a.cn + '</span>' +
+        '<span class="ann-arrow"> to </span>' +
+        '<span class="ann-en">' + a.en + '</span></div>'
+      ).join('') + '</div>';
+  } else if (annEl) {
+    annEl.innerHTML = '';
+  }
+  const box = document.getElementById('funResultBox');
+  if (box) box.classList.add('show');
+}
+
+function copyFunPseudo() {
+  if (!funCurrentPseudo) return;
+  navigator.clipboard.writeText(funCurrentPseudo).then(() => showToast('已复制偽中国語密码！'));
+}
+
+function postFunToInteract() {
+  if (!funCurrentPseudo) { showToast('请先生成密码'); return; }
+  switchZone('interact');
+  const ta = document.getElementById('community-input');
+  if (ta) { ta.value = funCurrentPseudo; ta.focus(); }
+  showToast('已填入互动区，点击发布！');
+}
+
+
+init();
+
+
+
+
+
+
+</script>
+
+<!-- 移动端底部导航 -->
+<nav class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-inner">
+    <button class="mnav-btn active" data-zone="translate" onclick="switchZone('translate');updateMobileNav(this)">
+      <span class="mnav-icon">🔄</span>
+      <span data-t="nav_translate">翻译</span>
+    </button>
+    <button class="mnav-btn" data-zone="learn" onclick="switchZone('learn');updateMobileNav(this)">
+      <span class="mnav-icon">📚</span>
+      <span data-t="nav_learn">学习区</span>
+    </button>
+    <button class="mnav-btn" data-zone="fun" onclick="switchZone('fun');updateMobileNav(this)">
+      <span class="mnav-icon">🎮</span>
+      <span data-t="nav_fun">趣味区</span>
+    </button>
+    <button class="mnav-btn" data-zone="interact" onclick="switchZone('interact');updateMobileNav(this)">
+      <span class="mnav-icon">💬</span>
+      <span data-t="nav_interact">互动区</span>
+    </button>
+  </div>
+</nav>
+
+</body>
+</html>
